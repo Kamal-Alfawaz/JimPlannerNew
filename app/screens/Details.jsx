@@ -2,7 +2,6 @@ import { View, Text, StyleSheet, ActivityIndicator } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import { FIREBASE_DB, FIREBASE_AUTH } from '../../FirebaseConfig';
 import { doc, getDoc } from 'firebase/firestore'; // Import Firestore methods for document retrieval
-import { getCurrentUser } from 'firebase/auth'; // Import method to get the current user
 
 const Details = () => {
   const [loading, setLoading] = useState(true);

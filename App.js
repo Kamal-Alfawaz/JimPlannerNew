@@ -3,42 +3,43 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Login from './app/screens/Login';
 import List from './app/screens/List';
 import Details from './app/screens/Details';
+import SignUp from './app/screens/SignUp';
 import { useEffect, useState } from 'react';
-import { User, onAuthStateChanged } from 'firebase/auth'
+import { onAuthStateChanged } from 'firebase/auth';
 import { FIREBASE_AUTH } from './FirebaseConfig';
 
 const Stack = createNativeStackNavigator();
 
-const InsideStack = createNativeStackNavigator();
-
-function InsideLayout(){
-  return(
-    <InsideStack.Navigator>
-      <InsideStack.Screen name="My todos" component={List}/>
-      <InsideStack.Screen name="Details" component={Details}/>
-    </InsideStack.Navigator>
-  )
-}
-
-export default function App() {
+function App() {
   const [user, setUser] = useState(null);
 
-
   useEffect(() => {
-    onAuthStateChanged(FIREBASE_AUTH, (user) => {
-      console.log('user', user);
-      setUser(user);
+    const unsubscribe = onAuthStateChanged(FIREBASE_AUTH, (currentUser) => {
+      console.log('user', currentUser);
+      setUser(currentUser);
     });
-  }, [])
+    return () => unsubscribe();
+  }, []);
+
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Login'>
+      <Stack.Navigator>
         {user ? (
-          <Stack.Screen name='Inside' component={InsideLayout} options={{headerShown: false}}/>
+          // Authenticated flow
+          <>
+            <Stack.Screen name="My Todos" component={List} />
+            <Stack.Screen name="Details" component={Details} />
+          </>
         ) : (
-          <Stack.Screen name='Login' component={Login} options={{headerShown: false}}/>
+          // Unauthenticated flow
+          <>
+            <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
+            <Stack.Screen name="SignUp" component={SignUp} options={{ headerShown: true }} />
+          </>
         )}
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
+
+export default App;
