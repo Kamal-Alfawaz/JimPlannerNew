@@ -3,7 +3,7 @@ import React from 'react'
 import { FIREBASE_AUTH } from '../../FirebaseConfig';
 import CalendarStrip from 'react-native-calendar-strip';
 
-const List = ({ navigation }) => {
+const ActivityScreen = ({ navigation }) => {
   return (
     <View>
       <CalendarStrip 
@@ -21,4 +21,4 @@ const List = ({ navigation }) => {
   )
 }
 
-export default List
+export default ActivityScreen

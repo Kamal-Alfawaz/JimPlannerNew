@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Login from './app/screens/Login';
-import List from './app/screens/List';
+import ActivityScreen from './app/screens/ActivityScreen';
 import Details from './app/screens/Details';
 import SignUp from './app/screens/SignUp';
 import { useEffect, useState } from 'react';
@@ -27,7 +27,7 @@ function App() {
         {user ? (
           // Authenticated flow
           <>
-            <Stack.Screen name="My Todos" component={List} />
+            <Stack.Screen name="My Todos" component={ActivityScreen} />
             <Stack.Screen name="Details" component={Details} />
           </>
         ) : (
