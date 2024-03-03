@@ -2,16 +2,16 @@ import { View, Text, StyleSheet, TextInput, Button, KeyboardAvoidingView, Toucha
 import React, { useState } from 'react';
 import { FIREBASE_AUTH, FIREBASE_DB } from '../../FirebaseConfig';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { doc, setDoc } from 'firebase/firestore'; // Make sure to import these
-import defaultProfilePic from '../../assets/defaultProfilePic.png'; // Adjust the path as necessary
-import * as ImagePicker from 'expo-image-picker'; // Assuming you're using Expo
+import { doc, setDoc } from 'firebase/firestore';
+import defaultProfilePic from '../../assets/defaultProfilePic.png';
+import * as ImagePicker from 'expo-image-picker';
 
 const SignUp = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [dob, setDob] = useState(''); // State for DOB
-    const [profilePic, setProfilePic] = useState(null); // State for profile picture
+    const [dob, setDob] = useState('');
+    const [profilePic, setProfilePic] = useState(null);
     const [loading, setLoading] = useState(false);
     const [gymLocation, setGymLocation] = useState(null);
     const auth = FIREBASE_AUTH;
@@ -37,12 +37,12 @@ const SignUp = () => {
         try {
             const response = await createUserWithEmailAndPassword(auth, email, password);
             console.log(response);
-            const userDocRef = doc(db, 'Users', response.user.uid); // Assuming 'Users' is the collection name
+            const userDocRef = doc(db, 'Users', response.user.uid);
             await setDoc(userDocRef, {
                 email: email,
                 name: name,
-                dob: dob || null, // Store DOB or null if not provided
-                profilePic: profilePic || null, // Store profilePic URL or null if not provided
+                dob: dob || null,
+                profilePic: profilePic || null,
                 gymLocation: gymLocation || null,
             });
             alert('Check Your Emails!');
@@ -72,7 +72,8 @@ const SignUp = () => {
                 {loading ? <ActivityIndicator size="large" color="#0000ff" />
                   : <>
                       <Button title="SignUp" onPress={() => SignUpUser()} />
-                  </>}
+                  </>
+                }
             </KeyboardAvoidingView>
         </View>
     );

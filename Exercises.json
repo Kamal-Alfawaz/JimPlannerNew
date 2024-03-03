@@ -1,0 +1,2510 @@
+[
+  {
+    "Exercise_Name": "Zottman Curl",
+    "Description": "",
+    "Muscle_Group": "Biceps",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Yates Row Reverse Grip",
+    "Description": "",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Wrist Roller",
+    "Description": "",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Wide-Grip Rear Pull-Up",
+    "Description": "",
+    "Muscle_Group": "Lats",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Wide-grip hands-elevated push-up",
+    "Description": "The wide-grip hands-elevated push-up is a variation on the elevated push-up performed with the hands farther apart than with a standard push-up. Having the hands higher than the feet makes it easier than wide-grip push-ups on the floor, but the extra width also puts more emphasis on the chest muscles. It can be used as a substitute for wide-grip floor push-ups, or as a mechanical dropset after maxing out on floor push-ups.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Wide-Grip Decline Barbell Bench Press",
+    "Description": "",
+    "Muscle_Group": "Chest",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Wide-grip bench press",
+    "Description": "The wide-grip bench press is a compound exercise targeting the chest and, to a lesser extent, the triceps. The main difference between this exercise and the standard bench press is that the hands are placed farther apart on the bar. Many lifters find they can handle more weight going wide than with narrower grips, although it's also worth noting that plenty of banged-up lifters have said benching with a wide grip may also have contributed to their shoulder injuries and pain. The wide-grip bench is often used as a chest-building movement in chest or upper-body workouts, or as an accessory movement for the traditional bench press.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Wide-grip barbell curl",
+    "Description": "The wide-grip barbell curl is a variation of the classic barbell curl with the grip wider than shoulder width. It is thought that this helps build the inner or 'short' head of the biceps muscles. This movement is usually performed for moderate to high reps, such as 8-12 reps per set.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Wide Stance Stiff Legs",
+    "Description": "",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Weighted sissy squat",
+    "Description": "The weighted sissy squat is an exercise primarily targeting the quadriceps. In sissy squats, the knees travel over the toes, placing the quads under a fairly extreme stretch. They are usually performed for moderate to high reps as part of a lower-body training session.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Weighted pull-up",
+    "Description": "The weighted pull-up is a more advanced variation of the pull-up exercise in which the lifter adds extra weight to their body. Options for adding weight include a dip belt, weighted vest, chains, a dumbbell placed between the feet or legs, or looping a kettlebell over the foot. Like other pull-up variations, the weighted pull-up builds strength and muscle in the upper back, biceps, and core.",
+    "Muscle_Group": "Lats",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Weighted Jump Squat",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Weighted Crunches",
+    "Description": "The weighted suitcase crunch is a weighted version of a popular abdominal training exercise. The simple addition of a weight makes the suitcase crunch far more difficult, helping build the 'six pack' muscles and providing a different stimulus to the core during training.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Weighted bench dip",
+    "Description": "The weighted bench dip is a highly effective exercise for building the triceps. The resistance comes from a combination of body weight and added weightâ€”usually a weight plate.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "V-up",
+    "Description": "The V-up is a bodyweight movement that targets the muscles of the abs, the rectus abdominis or 'six-pack' muscles in particular. It is similar to a suitcase crunch, but the lower back lifts off the ground at the top of each rep. It can be performed for time or reps in the ab-focused portion of any workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "V-bar pull-up",
+    "Description": "The V-bar pull-up is a bodyweight exercise utilizing a double-D or V-bar handle placed on top of a straight bar. This set-up approximates a close-grip neutral-grip pull-up, in which the reps are performed with the palms facing one another. Like other pull-up variations, it builds strength and muscle in the upper back, biceps, and core. It can be used as a more shoulder-friendly alternative to straight-bar pull-ups, or to help perform more reps than you can perform overhand.",
+    "Muscle_Group": "Lats",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Upside-down pull-up",
+    "Description": "The upside-down pull-up is an advanced bodyweight exercise that is normally performed on a pair of gymnastic rings. It involves pulling the body toward the ceiling in an inverted position. It targets the same muscles as traditional pull-ups, including the lats (latissimus dorsi), biceps, and core. However, the pulling angle is more akin to a bent-over row or upright row, depending on the angle of your hips.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Two-Arm Kettlebell Military Press",
+    "Description": "",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Triceps Pushdown - Rope Attachment",
+    "Description": "The cable rope push-down is a popular exercise targeting the triceps muscles. It's easy to learn and perform, making it a favorite for everyone from beginners to advanced lifters. It is usually performed for moderate to high reps, such as 8-12 reps or more per set, as part of an upper-body or arm-focused workout.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Cables"
+  },
+  {
+    "Exercise_Name": "Triceps Pushdown",
+    "Description": "The cable V-bar push-down is a popular gym exercise for targeting the triceps. It utilizes an angled bar, which can allow you to move heavier weights more comfortably than a straight bar or rope. It is usually performed for moderate to high reps, such as 8-12 reps or more per set, as part of an upper-body or arm-focused workout.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Triceps dip",
+    "Description": "The triceps dip is a bodyweight exercise performed on parallel bars or on a pull-up and dip station. It targets the triceps first, but also stretches and strengthens the chest and shoulders. Dips with a triceps focus are usually performed with an upright torso, the knees bent and crossed, and the arms close to the body. Dips can be performed for low reps for strength or higher reps for muscle growth.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Tricep Dumbbell Kickback",
+    "Description": "The single-arm triceps kick-back is an isolation move from a bent-over position used to increase size and strength of the triceps.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Treadmill running",
+    "Description": "Treadmill running is a popular cardiovascular exercise performed on a machine that is available in most gyms. Performing this exercise on a treadmill allows you to adjust the speed of your running and, depending on the machine, perform it on an adjustable incline. Many machines also have built-in heart rate monitors and timers to help you track your progress.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Treadmill jogging",
+    "Description": "Treadmill jogging is a popular cardiovascular exercise performed on a machine that is available in most gyms. Performing this exercise on a treadmill allows you to adjust the speed of your jogging and, depending on the machine, perform it on an adjustable incline. Many machines also have built-in heart rate monitors and timers to help you track your progress.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Trail Running/Walking",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Tire flip",
+    "Description": "The tire flip is an exercise that works the entire body, starting from a deadlift position and ending with a giant tire being flipped over. Each flip moves the tire farther in one direction until a set has been completed. It can be performed for time or reps as part of a functional fitness or athleticism-focused workout.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Thigh adductor",
+    "Description": "The thigh adductor machine is a lower-body exercise that targets the muscles of the inner thighs. It is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of lower-body training.",
+    "Muscle_Group": "Adductors",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "T-Bar Row with Handle",
+    "Description": "",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "T-Bar Row",
+    "Description": "",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Suspended ab fall-out",
+    "Description": "The suspended ab fall-out is a dynamic abdominal exercise utilizing a suspension strap system or gymnastic rings. It is similar in form to an ab roller, but can more easily be scaled to be more or less difficult. It targets the muscles of the rectus abdominis or 'six-pack' muscles, as well as the deep core muscles. It can be trained for low reps for strength or higher reps for muscle definition.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Superman",
+    "Description": "The Superman is a bodyweight exercise that consists of isometric holds in an extended spine position. It targets the muscles of the posterior chain, including the muscles of the glutes, spinal erectors, and upper back. It can be performed as part of a dynamic warm-up, or for muscle activation or mobility anytime.",
+    "Muscle_Group": "Lower Back",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Sumo deadlift",
+    "Description": "The sumo deadlift is a compound movement in which the feet are set in a wide stance with toes pointed out and grip is placed inside of the legs. It is allowed to be performed instead of conventional deadlifts in most powerlifting competitions. The sumo deadlift targets the hamstrings, glutes, and upper back/traps, but also has a greater emphasis on stretching and strengthening the adductor and hip muscles due to the wide stance.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Straight-bar wrist roll-up",
+    "Description": "The straight-bar wrist roll-up is a movement targeting the muscles of the forearms and hands. It is normally performed in high reps, for time, or simply to failure as a burnout for the lower arms. If shoulder fatigue limits your ability to perform the movement, it can be done with the barbell resting in a rack.",
+    "Muscle_Group": "Forearms",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Straight-arm rope pull-down",
+    "Description": "The straight-arm rope pull-down is a variation of the straight-arm lat pull-down performed using a cable stack machine and a rope grip. It can either be performed in an athletic upright stance, or slightly bent over. It both stretches and contracts the muscles of the lats (latissimus dorsi) as well as providing additional activation to the other upper back muscles and the core. Because the triceps are also isometrically involved in the movement, it is usually performed for higher reps, such as 8-15 reps or more.",
+    "Muscle_Group": "Lats",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Straight-Arm Pulldown",
+    "Description": "The straight-arm bar pull-down is a variation of the straight-arm lat pull-down performed using a cable stack machine. It can either be performed in an athletic upright stance, or slightly bent-over. It both stretches and contracts the muscles of the lats (latissimus dorsi) as well as providing additional activation to the other upper back muscles and the core. Because the triceps are also isometrically involved in the movement, it is usually performed for higher reps, like 8-15 reps or above.",
+    "Muscle_Group": "Lats",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Straight-arm dumbbell pull-over",
+    "Description": "The straight-arm dumbbell pull-over is an exercise that targets the muscles of the pecs, lats, and serratus anterior muscles. Performing this movement with straight arms makes it more difficult, increases the stretch on the serratus muscles and lats, and forces the core to work harder. Old-school bodybuilders would perform pull-overs with light weights for sets of 20 between sets of heavy 20-rep squats, but they are more popular today in moderate rep ranges, such as 8-12 reps per set, as part of an upper-body workout.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Stomach Vacuum",
+    "Description": "",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Stiff-Legged Dumbbell Deadlift",
+    "Description": "The dumbbell stiff-legged deadlift targets the hamstrings, glutes, low and upper back, as well as the core. The purpose of the stiff-legged, as opposed to Romanian deadlift with slightly bent knees, is to engage the hamstrings and low back to an even greater degree.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Step-up with knee raise",
+    "Description": "The step-up with knee raise is a lower-body exercise targeting the quads, glutes, and hamstrings. It differs from a traditional step-up in that at the top, you lift the trailing leg up to full hip flexion. This gives the exercise a greater range of motion and more of a focus on powerful hip extension in the working leg. When performed with body weight, these are usually performed for high reps as part of a dynamic warm-up, as cardio acceleration, or as part of the lower-body portion of a workout or circuit.",
+    "Muscle_Group": "Glutes",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Step-up with knee raise",
+    "Description": "The step-up with knee raise is a lower-body exercise targeting the quads, glutes, and hamstrings. It differs from a traditional step-up in that at the top, you lift the trailing leg up to full hip flexion. This gives the exercise a greater range of motion and more of a focus on powerful hip extension in the working leg. When performed with body weight, these are usually performed for high reps as part of a dynamic warm-up, as cardio acceleration, or as part of the lower-body portion of a workout or circuit.",
+    "Muscle_Group": "Glutes",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Stationary bike",
+    "Description": "The stationary bike is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stationary bike also helps develop the lower body. Stationary bikes come in multiple variations, ranging from ones that resemble riding a bike, to recumbent bikes, to fan bikes that work both the arms and the legs. No matter the variation, a stationary bike can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Standing palms-in shoulder press",
+    "Description": "The standing palms-in shoulder press is a dumbbell exercise targeting the shoulders. It can be performed in strength-focused rep ranges, such as 5-8 reps per set, or for higher reps to build muscle or for conditioning.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Standing One-Arm Dumbbell Triceps Extension",
+    "Description": "",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Dumbbells"
+  },
+  {
+    "Exercise_Name": "Standing One-Arm Dumbbell Curl Over Incline Bench",
+    "Description": "",
+    "Muscle_Group": "Biceps",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Standing One-Arm Cable Curl",
+    "Description": "The single-arm cable biceps curl is a single-joint isolation exercise for building the biceps. This move is intended to be strict and deliberate; this is not an exercise for using momentum or otherwise cheating.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Standing Olympic Plate Hand Squeeze",
+    "Description": "",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Standing leg swing",
+    "Description": "The standing leg swing is a dynamic stretching exercise that involves moving one leg up in front of you, as if to punt an imaginary football. This is a classic move for warming up the body and stretching the hamstrings.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Standing Hip Circles",
+    "Description": "",
+    "Muscle_Group": "Abductors",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Standing face pull",
+    "Description": "The standing face pull is an isolation exercise primarily targeting the rear deltoids, traps, and upper back. It is most often performed with a rope attachment.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Standing dumbbell upright row",
+    "Description": "The standing dumbbell upright row is a popular movement for building stronger and bigger traps and shoulders. Many lifters combine this move with either their back or shoulder workout, since it involves both body parts. It is generally performed for moderate to high reps, such as 8-12 reps per set or more.",
+    "Muscle_Group": "Traps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Standing Dumbbell Triceps Extension",
+    "Description": "",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Standing dumbbell shrug",
+    "Description": "The standing dumbbell shrug is a popular movement to build and strengthen the trapezius muscles. It's often trained on a bodybuilding-style shoulder or back training day, but can also work well in full-body or strength-focused training.",
+    "Muscle_Group": "Traps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Standing dumbbell shoulder press",
+    "Description": "The standing dumbbell shoulder press is a classic deltoid-building exercise that is common in gyms around the world. Performing the move standing up as opposed to seated allows more weight to be used and taxes the core more than seated presses. The standing press is worthy of being the main movement in a muscle-building shoulder workout, but is also a great strength movement and accessory for the bench press.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Standing concentration curl",
+    "Description": "The standing concentration curl is a variation on the more common seated concentration curl, which is a staple of bodybuilding arm routines. It can serve as a substitute for preacher curl variations if a preacher bench is unavailable and is also a classic way to focus in on the biceps peak. It is usually performed for moderate to high reps, such as 8-10 reps per set, with a focus on strict form and controlled tempo.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Standing Calf Raises",
+    "Description": "The standing calf raise is a popular movement to target the calf muscles of the lower leg, and in particular the gastrocnemius muscles. When unweighted, it is usually performed for high reps or for time.",
+    "Muscle_Group": "Calves",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Standing cable rear delt row",
+    "Description": "The standing cable rear delt row primarily targets the rear deltoids. This movement also hits the traps, rhomboids, and biceps. It is usually performed for moderate to high reps, at least 8-12 reps per set, as part of an upper-body or shoulder-focused workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Standing cable low-to-high twist",
+    "Description": "The standing cable low-to-high twist is a core exercise targeting the upper abdominals and the obliques. Take care to perform it with control, as opposed to violent twisting which can injure the back. It is usually performed for moderate to high reps, at least 8-15 per side, as part of the core-focused portion of a workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Standing cable crunch",
+    "Description": "The standing cable crunch is a popular core isolation exercise using a rope attachment. It primarily targets the rectus abdominis or 'six-pack' muscles, but also strengthens the deep core muscles. It is most commonly performed early in an ab workout, usually in moderate to high reps, such as 8-12 reps per set or higher.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Standing Bradford press",
+    "Description": "The standing Bradford press is an obscure yet effective shoulder exercise that alternates front presses with behind-the-neck presses. It can be used as a warm-up for other press variations on a shoulder day, or as a muscle-building movement on its own in a shoulder or upper-body focused workout. It is usually performed for relatively high reps, such as 8-15 reps per set or higher, or just to the point of fatigue.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Standing Biceps Cable Curl",
+    "Description": "The cable straight-bar biceps curl takes a classic bodybuilding exercise, the standing barbell curl, and replaces the barbell with a handle attached to a cable. This is a common burnout move performed for moderate to high reps, such as 8-12 reps per set, as part of an upper-body or arm-focused workout.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Standing behind-the-back wrist curl",
+    "Description": "The standing behind-the-back wrist curl is a popular exercise to target the muscles in the forearms, wrists, and fingers. It is generally performed for moderate to high reps, such as 8-15 reps per set, and can work as isolated forearm training or as part of an arms-focused workout.",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Standing barbell overhead triceps extension",
+    "Description": "The standing barbell overhead triceps extension is an isolation movement targeting the triceps. The overhead position targets the long head of the triceps in particular. This movement is generally performed for moderate to high reps as part of the arms-focused portion of a workout. If holding a straight bar bothers the wrists or elbows, it can alternately be performed with an EZ-bar or neutral-grip bar.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Stairmaster",
+    "Description": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Stair climber",
+    "Description": "The stair climber is a popular cardio machine found in most commercial gyms. Along with burning a ton of calories, the stair climber also helps build strength in the lower body, especially the glutes. It can work well at higher speeds for interval-style conditioning training, but also works well at slower paces for steady-state cardio.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Squat with Chains",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Split Squat with Dumbbells",
+    "Description": "The dumbbell Bulgaria split squat is a single-leg exercise targeting the quads, glutes, and hamstrings.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Spider crawl",
+    "Description": "The spider crawl is a bodyweight exercise that involves crawling on the floor with the knees outside of the elbows. It is different from a leopard crawl in that the hips are higher, and it's different from a bear crawl because the knees are wider. It can be done as a full-body warm-up, in short bursts for power or circuit training, or for longer durations as cardiovascular conditioning.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Snatch-Grip Behind-The-Neck Overhead Press",
+    "Description": "",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Snatch Deadlift",
+    "Description": "",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Smith machine shrug",
+    "Description": "The Smith machine shrug is an upper-body exercise targeting the traps (trapezius muscles). It is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of shoulder or trap-focused training.",
+    "Muscle_Group": "Traps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Smith machine shoulder press",
+    "Description": "The Smith machine shoulder press is a machine-based exercise targeting the deltoid muscles. The Smith machine mimics a barbell but provides more stability. This movement can be programmed in low reps for strength or higher reps for muscle and strength endurance. It is often performed for moderate to high reps, such as 8-12 reps per set or more, as part of a shoulder or upper-body focused workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Smith Machine Calf Raise",
+    "Description": "The Smith machine standing calf raise is a machine-based exercise targeting the muscles of the calves, particularly the gastrocnemius or upper calf muscle. It is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of the lower-body portion of a workout.",
+    "Muscle_Group": "Calves",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Smith machine box squat",
+    "Description": "The Smith machine box squat is a machine-based exercise targeting the quads, glutes, and hamstrings. The Smith machine mimics a barbell but provides more stability. This movement can be programmed in low reps for strength or power or higher reps for muscle and strength endurance. It is often performed for moderate to high reps, such as 8-12 reps per set or more, as part of a full-body or lower-body workout.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Smith machine bench press",
+    "Description": "The Smith machine bench press is a machine-based movement targeting the chest. The Smith machine mimics a barbell but provides more stability. This movement can be programmed in low reps for strength or higher reps for muscle and strength endurance. It is often performed for moderate to high reps, such as 8-12 reps per set or more, as part of a chest or upper-body focused workout.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Smith machine back squat",
+    "Description": "The Smith machine back squat is a machine-based exercise targeting the muscles of the lower body. The Smith machine mimics a barbell but provides more stability. This movement can be programmed in low reps for strength or higher reps for muscle and strength endurance. It is often performed for moderate to high reps, such as 8-12 reps per set or more, as part of a full-body or lower-body workout.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Sledgehammer swing",
+    "Description": "The sledgehammer swing is an exercise working the abdominals and numerous other muscles. The sledgehammer is slammed from overhead onto a tire which absorbs the impact and causes the hammer to bounce back up. It can be performed for time or reps as part of a functional fitness or athleticism-focused workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Skating",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Single-Leg Press",
+    "Description": "The single-leg leg press is an exercise targeting the quadriceps one leg at a time. Many lifters prefer the leg press to squatting for several reasons, including the perception that itâ€™s safer for the spine.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Single-leg glute bridge",
+    "Description": "The single-leg glute bridge is a lower-body exercise that targets the glutes, lower back, and hamstrings. It is performed one side at a time.",
+    "Muscle_Group": "Glutes",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Single-leg depth squat",
+    "Description": "The single-leg depth squat is an exercise targeting the muscles of the lower body, including the quads, glutes, and hamstrings. It is sometimes used as a substitute for the pistol squat, since it doesn't demand the same level of flexibility to perform. It is usually performed for low to moderate reps with a focus on proper form and control.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Bands"
+  },
+  {
+    "Exercise_Name": "Single-leg cable hip extension",
+    "Description": "The single-leg cable hip extension is an isolation exercise that targets the glutes, specifically the gluteus maximus. It is a common burnout movement on a lower-body focused day and is usually performed for moderate to high reps, such as 8-12 reps per set or more.",
+    "Muscle_Group": "Glutes",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Single-dumbbell front raise",
+    "Description": "The single-dumbbell front raise is an isolation movement that targets the shoulders. In particular, it focuses on the anterior or front head of the deltoid muscles. By performing it with one dumbbell at a time, you can focus on each shoulder muscle independently and try to address muscular imbalances between shoulders. This movement is usually performed for moderate to high reps, at least 8-12 reps per set, as part of an upper-body or shoulder-focused workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Single-arm standing shoulder press",
+    "Description": "The single-arm standing shoulder press is a popular exercise to build size and strength the shoulders and triceps. Most lifters find they can go heavier (per arm) on this movement than if they are pressing two dumbbells simultaneously, making it an effective strength movement as well as a muscle-building movement in higher reps.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Single-Arm Push-Up",
+    "Description": "",
+    "Muscle_Group": "Chest",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Single-arm palm-in dumbbell shoulder press",
+    "Description": "The single-arm palm-in dumbbell shoulder press builds the shoulder muscles but with two major differences from the standard dumbbell shoulder press. It's done one arm at a time and the wrist stays neutral throughout the movement. It can be performed standing or seated. A single dumbbell press can be pursued as a strength goal, or trained in traditional muscle-building rep ranges such as 8-15 reps per set or more.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Single-arm lateral raise",
+    "Description": "The single-arm lateral raise is a shoulder exercise that targets the medial or middle head of the deltoid muscle. It's a staple strength-training move and is a great option for accessory work on upper-body training days. Hold on to a post for balance, or do it free-standing to challenge core strength and stability. It is usually performed for moderate to high reps, at least 8-12 reps per side, as part of the upper-body or shoulder-focused portion of a workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Single-arm kettlebell snatch",
+    "Description": "The single-arm kettlebell snatch is a kettlebell exercise that involves lifting a kettlebell overhead in a single motion. It is popular as a full-body strength and conditioning movement, but it's also competed for reps in Russian-style girevoy sport. A 'snatch test' of max reps in 5 or 10 minutes is also a common measurement of conditioning in kettlebell training. It can be performed from the ground or with a swing",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Single-arm kettlebell row",
+    "Description": "The single-arm kettlebell row is a popular muscle- and strength-building exercise that works the muscles of the back and core simultaneously. It has all the same benefits as a single-arm dumbbell row, but some people find a kettlebell more comfortable to hold during the movement.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Single-arm kettlebell push-press",
+    "Description": "The single-arm kettlebell push-press is a popular kettlebell movement that involves performing a press with help from the muscles of the lower body. It is preceded by a clean at the start of each set, and optionally you can perform a clean between each rep. It can be trained in traditional strength or muscle-building rep ranges, in circuit or fat-loss training, or as part of a larger kettlebell combination or complex.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Single-arm kettlebell clean and jerk",
+    "Description": "The single-arm kettlebell clean and jerk is a popular kettlebell movement that is performed both in an exercise setting and competitively as a part of Russian-style girevoy sport. It differs from a clean and push-press in that the lifter 'dips' under the weight rather than simply using the legs to help push the weight up. Each rep of a clean and jerk is preceded by a clean at the start of each set. It can be trained in traditional strength or muscle-building rep ranges, in circuit or fat-loss training, or as part of a larger kettlebell combination or complex.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Single-arm kettlebell clean",
+    "Description": "The single-arm kettlebell clean is an explosive kettlebell exercise where the lifter pulls the weight to shoulder level in a single movement. While the kettlebell clean is often used as a transitional movement into the press or front squat, it is also a valuable strength and power exercise in its own right. It can be performed in low rep ranges for strength or higher rep ranges for technique practice or muscle growth.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Single-arm incline rear delt raise",
+    "Description": "The single-arm incline rear delt raise is an upper-body exercise targeting the posterior deltoids or shoulder muscles, as well as the postural muscles of the upper back. Training each side independently can help correct imbalances in size, strength, and shoulder stability. Because it targets such small muscles, this exercise is usually performed with light weight for high reps, such as 10-15 reps per set or more.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Single-arm incline lateral raise",
+    "Description": "The single-arm incline lateral raise is an exercise targeting the lateral or medial head of the shoulder muscles. It is performed lying sideways on an incline bench set to around 45 degrees, which helps to increase the range of motion in the lift and enforce strict form. Because it targets such small muscles, this exercise is usually performed with light weight for high reps, such as 8-12 reps per set or more.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Single-arm high-cable side bend",
+    "Description": "The single-arm high-cable side bend is an exercise targeting the obliques using a cable stack machine.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Single-arm dumbbell triceps extension",
+    "Description": "The single-arm dumbbell triceps extension is a popular exercise targeting the triceps one side at a time. It targets all three heads of the triceps, but when performed with the arm overhead, it can be especially effective at building the long head of the triceps. This exercise is usually performed for moderate to high reps, at least 8-12 reps per set, as part of the upper-body or arm-focused portion of a workout.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Single-arm dumbbell preacher curl",
+    "Description": "The single-arm dumbbell preacher curl is an exercise that focuses on building the biceps, particularly the biceps peak. Most people will go light on this movement, performing it for moderate to high reps as part of an upper-body or arms-focused workout.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Single-arm cable triceps extension",
+    "Description": "The single-arm cable triceps extension is a single-joint isolation exercise for building the triceps. It involves driving a handle attached to a cable stack overhead to full extension. It is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of an upper-body or arm-focused workout.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Single-arm cable seated row",
+    "Description": "The single-arm cable seated row is a version of the cable row movement that trains the muscles of the upper back one side at a time. It targets a wide range of muscles including the lats (latissimus dorsi), traps, rhomboids, and rear deltoids. It also targets the biceps to a lesser degree. The single-arm row can work well in a variety of rep ranges but is most popular in muscle-building workouts or as an accessory movement for strength workouts.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Single-arm cable front raise",
+    "Description": "The single-arm cable front raise is an isolation exercise targeting the anterior and medial deltoids or shoulder muscles. The single-arm version of this movement allows you to focus on each side independently. Because grip will be a limitation, it is usually performed for moderate to high reps, at least 8-12 reps per set, as part of an upper-body or shoulder-focused workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Single-arm cable cross-over",
+    "Description": "The single-arm cable cross-over is an isolation movement that uses a cable stack to build bigger and stronger pectoral muscles. Working the chest one side at a time allows you to focus on the balance between the sides of your chest and really feel the chest muscles contracting. It is common in upper-body and chest-focused muscle-building workouts, often in combination with other presses or flyes to target the chest from different angles.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Single-arm bent-over cable rear delt fly",
+    "Description": "The single-arm bent-over cable rear delt fly is an exercise targeting the rear deltoids. It is a great way to isolate this area of the shoulder and attack each side independently. It is usually performed for moderate to high reps, at least 8-12 reps per set, as part of an upper-body or shoulder-focused workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Single Leg Push-off",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Side-to-side box skip",
+    "Description": "The side-to-side box skip is an explosive lower-body exercise that involves jumping laterally over a bench or box, landing with one foot on top of the surface, and then switching positions. It primarily targets the muscles of the lower body, but is also a serious cardiovascular challenge. It is often performed for high reps or for time as part of a fat-loss or athleticism-focused workout or circuit.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Side Wrist Pull",
+    "Description": "",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "None"
+  },
+  {
+    "Exercise_Name": "Side To Side Chins",
+    "Description": "",
+    "Muscle_Group": "Lats",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Side Lateral Raise",
+    "Description": "The dumbbell lateral raise is an upper body isolation exercise for building shoulder strength and muscle. It's a staple strength training move and is a great option for accessory work on upper body training days. This exercise particularly focuses on the lateral or medial head of the deltoid, making them appear wider and more developed.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Shotgun row",
+    "Description": "The shotgun row is a single-arm row variation utilizing a cable stack in a staggered stance. It targets the muscles of the middle back, like the lats (latissimus dorsi) and rhomboids, but also the core. It is usually performed for moderate to high-reps, at least 8-15 reps per set, in the later stages of a back or upper-body workout.",
+    "Muscle_Group": "Lats",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Seated Two-Arm Palms-Up Low-Pulley Wrist Curl",
+    "Description": "",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Seated triceps press",
+    "Description": "The seated triceps press is a popular arm-building exercise that targets the triceps with a single dumbbell held by both hands, extending it up behind your head. While you can go surprisingly heavy on this movement, it is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of the upper-body or arm-focused portion of a workout. If you're going heavy, having someone help get the weight into position is a good idea.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Seated Side Lateral Raise",
+    "Description": "The seated dumbbell lateral raiseis an iconic exercise for developing the shoulders. If youâ€™ve ever worked out with weights, chances are youâ€™ve done this move at some point. Proper execution is paramount to avoid injury.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Seated rear delt fly",
+    "Description": "The seated rear delt fly is an upper-body exercise that targets the real deltoid of the shoulder. By performing the movement seated, it eliminates momentum from the rest of the body. This movement is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of the upper-body or shoulder-focused portion of a workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Seated palms-up wrist curl",
+    "Description": "The seated palms-up wrist curl is an exercise targeting the forearms. It is usually performed for high reps, such as 10-15 reps per set or more, as part of a grip or arm-focused workout.",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Seated palms-down wrist curl",
+    "Description": "The seated palms-down wrist curl is an exercise targeting the forearms. It is usually performed for high reps, such as 10-15 reps per set or more, as part of a grip or arm-focused workout.",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Seated Palms-Down Barbell Wrist Curl",
+    "Description": "",
+    "Muscle_Group": "Forearms",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Seated One-Arm Dumbbell Palms-Up Wrist Curl",
+    "Description": "",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Seated One-Arm Dumbbell Palms-Down Wrist Curl",
+    "Description": "",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Seated Flat Bench Leg Pull-In",
+    "Description": "",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Weight Bench"
+  },
+  {
+    "Exercise_Name": "Seated finger curl",
+    "Description": "The seated finger curl is an exercise targeting the muscles of the hands and forearms. It is popular with rock climbers and other athletes looking to build forearm size and strength. The range of motion is tiny, but done for moderate to high reps, these will definitely make the forearms burn.",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Seated face pull",
+    "Description": "The seated face pull is a cable exercise targeting the shoulder muscles, particularly the rear delts, and the muscles of the upper back. This can help build healthier shoulders and posture, and increase shoulder stability. It is usually performed for moderate to high reps as part of a dynamic warm-up for an upper-body workout or in the main part of a shoulder-focused workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Seated dumbbell shoulder press",
+    "Description": "The seated dumbbell shoulder press is a popular exercise for building muscle and strength in the shoulders. The triceps also work hard in this lift. Many lifters find using dumbbells to be more comfortable and shoulder-friendly for this press variation than a barbell. This can be the primary pressing movement on an upper-body or shoulder day, or an effective accessory movement later in a workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Seated Dumbbell Press",
+    "Description": "The seated dumbbell shoulder pressis an exercise for building muscle and strengthening the shoulders, particularly but not exclusively the front heads. The triceps also assist. Some lifters feel that using dumbbells versus a barbell reduced injury risk.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Seated dumbbell biceps curl",
+    "Description": "The seated dumbbell biceps curl is a popular exercise for building bigger biceps. While curls can effectively be performed standing as well, performing them seated can enforce strict form and perhaps boost the mind-muscle connection. Like most curl variations, these are usually performed for moderate to high reps, such as 8-12 reps per set or more.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Seated Close-Grip Concentration Barbell Curl",
+    "Description": "",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Seated Calf Raise",
+    "Description": "The machine seated calf raise is an exercise targeting the calf muscles of the lower leg, particularly the soleus muscle. It is usually performed for moderate to high reps, such as 8-12 reps per set, and occasionally for very high burnout-focused sets of 50-100 total reps.",
+    "Muscle_Group": "Calves",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Seated cable shoulder press",
+    "Description": "The seated cable shoulder press is a multijoint machine-based exercise that focuses on the deltoid or shoulder muscles, as well as the triceps. It's most common in muscle-building workouts and rep ranges, usually 8-12 reps or more.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Seated Cable Rows",
+    "Description": "The cable seated row is a popular exercise to train the muscles of the upper back, including the lats (latissimus dorsi), traps, rhomboids, and rear deltoids, using a cable stack. It also targets the biceps to a lesser degree. The cable row can work well in a variety of rep-ranges, but is most popular in muscle-building workouts or as an accessory movement for strength workouts.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Seated barbell shoulder press",
+    "Description": "The seated barbell shoulder press is a classic exercise for building muscle and strength in the shoulders. The triceps also play a significant role in pressing the barbell overhead. Performing the movement seated reduces help from the lower body and decreases the risk of overextending the lumbar spine during the movement. This press variation can be the primary pressing movement on an upper-body or shoulder day, or an effective accessory movement later in a workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Scissors Jump",
+    "Description": "The alternating lunge jump is an explosive bodyweight exercise that targets the lower-body muscles, including the quads, glutes, and hamstrings. It can be performed for time or reps in power training, and is also effective in any fat-loss or athleticism-focused workout.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Russian twist",
+    "Description": "The Russian twist is an exercise targeting the abdominals and the obliques. Beginning from a position that resembles stopping midway through a sit-up, it involves twisting side to side. It can be performed with body weight alone or while holding a weight plate or other object. It is performed by alternating sides with each rep and can be done for time or for a specific number of reps as part of the ab-focused portion of any workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Rower",
+    "Description": "The rower is a popular gym machine that is serious cardiovascular work, but also targets the legs, back, and arm muscles. It's a great way build overall aerobic and muscular fitness. It is popular in CrossFit-style workouts, but is also a staple in all types of gyms. It can be equally effective for HIIT-style interval workouts or for longer-duration endurance work.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Rope Crunch",
+    "Description": "The kneeling cable crunch is a popular core isolation exercise using a rope attachment and cable stack while kneeling on the floor. It primarily targets the rectus abdominus or 'six-pack' muscles, but also strengthens the deep core muscles. It is most commonly performed early in an ab workout, usually in moderate to high reps like 8-12 reps per set or higher.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Rope climb",
+    "Description": "The rope climb is an exercise that is used commonly in CrossFit workouts and as a test of upper-body strength. It was even contested at the Olympics in the early 20th century. It targets a wide range of upper-body musculature, including the hands and forearms, shoulders, biceps, lats (latissimus dorsi), and core.",
+    "Muscle_Group": "Lats",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Romanian Deadlift With Dumbbells",
+    "Description": "The dumbbell stiff-legged deadlift targets the hamstrings, glutes, low and upper back, as well as the core. The purpose of the stiff-legged, as opposed to Romanian deadlift with slightly bent knees, is to engage the hamstrings and low back to an even greater degree.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Romanian Deadlift from Deficit",
+    "Description": "",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Rocky Pull-Ups/Pulldowns",
+    "Description": "",
+    "Muscle_Group": "Lats",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Rocking Standing Calf Raise",
+    "Description": "",
+    "Muscle_Group": "Calves",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Ring dip",
+    "Description": "The ring dip is an upper-body strength exercise performed on gymnastic rings. It targets the muscles of the chest, triceps, and shoulders, but is also quite taxing to the core. It is generally considered to be more difficult than dips performed on parallel bars. It is common in gymnastics training and CrossFit workouts, but is also a simple way to make dips more challenging for any strength athlete.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Rickshaw Carry",
+    "Description": "",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Reverse-grip lat pull-down",
+    "Description": "The reverse-grip lat pull-down is variation on the lat pull-down that targets the lower lats more than an overhand grip. Because the hands are relatively close together, it also increases the range of motion beyond wider-grip pull-down variations. It can be performed for low reps, such as 5-6 per set, for back strength, or for higher reps for size.",
+    "Muscle_Group": "Lats",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Reverse-grip incline dumbbell bench press",
+    "Description": "The reverse-grip incline dumbbell bench press is an upper-body exercise targeting the pectoral muscles. Pressing with a reverse grip targets the upper chest in particular, especially when performed on an incline. This press variation is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of upper-body or chest-focused training.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Reverse-grip bent-over row",
+    "Description": "The reverse-grip bent-over row is a compound exercise used to build strength and size in both the lower and upper back. It targets nearly all of the muscles in the back, but particularly the lats, rhomboids, and lower back. It is thought to target the biceps and lats a bit more directly than overhand barbell rows. Because it can be loaded heavily, it is a popular movement in strength and muscle-focused upper-body workouts.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Reverse-grip bench press",
+    "Description": "The reverse-grip bench press is a popular barbell exercise targeting the chest, triceps, and forearms. The main difference between this exercise and the standard bench press is that the grip is underhand, not overhand. This helps target both the upper chest and the triceps. This lift can feel awkward at first, so go light and don't be afraid to use a spotter.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Reverse Grip Triceps Pushdown",
+    "Description": "The reverse-grip cable straight-bar push-down is a twist on the popular cable straight-bar push-down. The difference has to do with how the hands are positioned holding the bar: the palms facing up rather than down. Because grip will be a limiting factor, this movement is usually performed for moderate to high reps, such as 8-12 reps per set or higher.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Reverse crunch",
+    "Description": "The reverse crunch is a popular exercise targeting the abdominals, particularly the lower half. Itâ€™s easy to perform on either the floor or a flat bench. Many lifters think of this as a companion to the crunch, which targets the upper abdominals more than the lower.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Reverse Cable Curl",
+    "Description": "",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Reverse Barbell Preacher Curls",
+    "Description": "The reverse-grip barbell curl is a variation on the biceps curl where the palms face downward. The switch from an underhand to an overhand grip brings the forearm and brachialis muscles more into the exercise. If it is uncomfortable to the wrists, try performing it on the angles of an EZ-curl bar.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "E-Z Curl Bar"
+  },
+  {
+    "Exercise_Name": "Reverse Band Box Squat",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Rack Pull with Bands",
+    "Description": "",
+    "Muscle_Group": "Lower Back",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Push-Ups With Feet On An Exercise Ball",
+    "Description": "",
+    "Muscle_Group": "Chest",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Push-Ups - Close Triceps Position",
+    "Description": "The close push-up is an upper-body exercise that targets the chest, triceps, and shoulders. The close hand position places more emphasis on the triceps.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Pushups",
+    "Description": "The push-up is a popular bodyweight exercise that is commonly used in military and tactical physical fitness tests. Itâ€™s a classic movement to build upper-body muscle and strength, emphasizing the chest, triceps, and shoulders, but also working the upper back and core.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Push-press",
+    "Description": "The push-press is an overhead press variation in which the barbell is pushed upward with assistance from the lower body. This 'push' helps the weight travel through the sticking point of a strict press. The push-press is commonly performed as part of barbell complexes, power training for all types of athletics, or as a powerful shoulder exercise.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Pullups",
+    "Description": "The pull-up is a multi-joint bodyweight exercise that builds strength and muscle in the upper back, biceps, and core. It is often used as a measurement tool in military or tactical fitness tests, and is an excellent gauge of â€œrelative strengthâ€ which is strength in relation to bodyweight.",
+    "Muscle_Group": "Lats",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Pull-up",
+    "Description": "The pull-up is a multijoint bodyweight exercise that builds strength and muscle in the upper back, biceps, and core. It is often used as a measurement tool in military or tactical fitness tests, and is an excellent gauge of 'relative strength' which is strength in relation to body weight.",
+    "Muscle_Group": "Lats",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Preacher Hammer Dumbbell Curl",
+    "Description": "",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Preacher Curl",
+    "Description": "The EZ-bar preacher curl is a classic exercise for building bigger biceps. This move is all about isolation. With the back of the upper arms against the pad, itâ€™s next to impossible to cheat. Go light, get a great pump, and build that peak!",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Power Snatch",
+    "Description": "",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Power Partials",
+    "Description": "",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Power Clean from Blocks",
+    "Description": "",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Power clean",
+    "Description": "The power clean is a full-body movement in which the bar is pulled from the floor and caught in the front rack position in three pulls or phases. The bar is received in the 'power' position, with the hips higher than a full-depth squat position. The power clean can be used as a component of the clean and press or clean and jerk, but is also a valuable lift to build explosive power and strength.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Plate Twist",
+    "Description": "",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Plate Pinch",
+    "Description": "",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Parallel Bar Dip",
+    "Description": "The triceps dip is a bodyweight exercise performed on parallel bars or on a pull-up and dip station. It targets the triceps first, but also stretches and strengthens the chest and shoulders. Dips with a triceps focus are usually performed with an upright torso, the knees bent and crossed, and the arms close to the body. Dips can be performed for low reps for strength or higher reps for muscle growth.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Palms-up wrist curl over bench",
+    "Description": "The palms-up wrist curl over bench is an exercise targeting the forearms. It is usually performed for high reps, such as 10-15 reps per set or more, as part of a grip or arm-focused workout.",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Palms-Up Dumbbell Wrist Curl Over A Bench",
+    "Description": "",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Palms-down wrist curl over bench",
+    "Description": "The palms-down wrist curl over bench is an exercise targeting the forearms. It is usually performed for high reps, such as 10-15 reps per set or more, as part of a grip or arm-focused workout.",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Palms-Down Dumbbell Wrist Curl Over A Bench",
+    "Description": "",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Pallof press",
+    "Description": "The Pallof press is an isometric exercise that trains core stability. It involves resisting rotation from a cable or band, developing what is sometimes called 'anti-rotation' core strength. It is most often seen in programs for athletes who compete in sports that test strength, power, and functional movements. It can be trained in timed holds or for reps by pressing the cable or band away from the body.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Overhead dumbbell front raise",
+    "Description": "The overhead dumbbell front raise takes the dumbbell front raise one step further, extending the motion all the way above the head. In addition to the shoulders, it activates and strengthens the muscles of the traps and upper back. It is usually performed for moderate to high reps, such as 8-15 reps or more. It can be part of a dynamic upper-body warm-up, performed as a muscle-building upper-body movement, or as a burnout movement on shoulder day.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Overhead cable curl",
+    "Description": "Also known as a crucifix curl, the overhead cable curl is a biceps-focused exercise performed between two cable stacks, using a pair of D-handles. The arms and elbows are held at shoulder height throughout the movement, and both hands curl in toward the ears. This position is designed to eliminate shoulder involvement and momentum, while targeting the biceps peak. This movement is generally done for moderate to high reps, such as 8-12 reps per set or more, as part of arm-focused training.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Otis-Up",
+    "Description": "The Otis-up is a weighted exercise focusing on the abdominal muscles, as well as the shoulders to a lesser degree. It primarily targets the rectus abdominus or â€œsix-packâ€ muscles, but also involves the obliques and deep core muscles. It is normally performed on a decline bench holding a weight plate, but can also be performed with a dumbbell, kettlebell, or other weight.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "One-Arm Long Bar Row",
+    "Description": "The single-arm landmine bent-over row is a barbell exercise focused on the muscles of the middle back, such as the lats (latissimus dorsi) and rhomboids. It also targets the biceps and grip. It utilizes a landmine device which anchors one end of the barbell near the ground, but could also be approximated by placing the barbell in the corner of a room.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "One-Arm Dumbbell Row",
+    "Description": "The single-arm bench dumbbell row is a popular exercise for building the latissimus dorsi, or lat, muscles of the back. The bench is used for support during the rowing motion.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "One Arm Supinated Dumbbell Triceps Extension",
+    "Description": "",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "One Arm Pronated Dumbbell Triceps Extension",
+    "Description": "",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Olympic Squat",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Neutral-grip dumbbell bench press",
+    "Description": "The neutral-grip dumbbell bench press is a variation on a classic chest-building exercise where the palms face each other instead of forward. This shift puts the elbows closer to the sides, placing more emphasis on the triceps, and perhaps also the inner chest. The neutral-grip press can be performed in lower reps for strength or higher reps for muscle growth.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Neck Press",
+    "Description": "",
+    "Muscle_Group": "Chest",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Natural Glute Ham Raise",
+    "Description": "The glute ham raise is an exercise targeting the glutes and hamstrings on a GHD.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Narrow-stance squat",
+    "Description": "The narrow-stance squat is an exercise that targets the lower body with an emphasis on the quads. Many people will find they can't go as deep in a narrow-stance squat as with a wider squat, which is normal. The narrow-stance squat can be performed for time or reps in any workout.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Narrow-stance leg press",
+    "Description": "The narrow-stance leg press is a machine-based exercise that targets the muscles of the legs. It emphasizes the quads, particularly the muscles of the outer quads and hips. It is often used as an accessory for squats, or as a muscle-building movement during lower-body training when it is usually performed for moderate to high reps, such as 8-12 reps per set or more.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Narrow Stance Hack Squats",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Muscle Up",
+    "Description": "",
+    "Muscle_Group": "Lats",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Mountain climber",
+    "Description": "The mountain climber is a popular bodyweight exercise targeting the muscles of the core, as well as the shoulders, hips, and cardiovascular system. It involves lifting one knee to the chest at a time from a straight-arm plank position. It can be performed for time or reps as part of a dynamic warm-up, for bodyweight cardio or conditioning, or as no-equipment dynamic core training.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Military press",
+    "Description": "The military press is a compound movement used to build size and strength in the shoulders. It was once contested as a fourth powerlift, but is rarely competed anymore. However, being able to press a significant weight overhead remains a popular marker of upper-body strength. The military press can be trained as a strength lift or in traditional muscle-building rep ranges as part of full-body, shoulder-focused, or upper-body training.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Middle Back Shrug",
+    "Description": "",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Man-maker",
+    "Description": "The man-maker is a sequence of exercises combining a dumbbell front squat, military press, renegade row, and sprawl. Between these movements it challenges muscles across the body, along with the cardiovascular system. It can be performed for rounds or for time as a single full-body exercise or as part of a fat-loss or athleticism-focused workout.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Machine Squat",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Machine shoulder press",
+    "Description": "The machine shoulder press is a machine-based exercise targeting the deltoid muscles. It approximates the motion of a free-weight shoulder press, but uses a selectorized weight-stack or plate-loaded machine. Many such machines also allow you to choose between different grips and grip widths. Machine shoulder presses are often done for moderate to high reps, such as 8-12 reps per set or more, as part of the upper-body or shoulder-focused portion of a workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Machine seated row",
+    "Description": "The machine seated row is a popular exercise targeting the back muscles, particularly the lats (latissimus dorsi), rhomboids, and middle and lower trapezius. There is a wide variety of seated row machines, but most of them approximate the motion of a free-weight row, but in an upright, forward-facing position. Machine row variations are often performed for moderate to high reps, such as 8-12 reps per set or more, as part of an upper-body or back-focused portion of a workout.",
+    "Muscle_Group": "Lats",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Machine Bicep Curl",
+    "Description": "",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Lying Leg Curls",
+    "Description": "The lying leg curl is a popular machine-based exercise for the legs, particularly the hamstrings. It is similar to the seated leg curl, but the open hip angle in the lying leg curl may incorporate more glute and calf activation. It is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of a leg pre-exhaust or as a muscle-building movement for lower-body training.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Lying Face Up Plate Neck Resistance",
+    "Description": "",
+    "Muscle_Group": "Neck",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Lying Face Down Plate Neck Resistance",
+    "Description": "",
+    "Muscle_Group": "Neck",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Lying cable triceps extension",
+    "Description": "The lying cable triceps extension is an isolation exercise performed lying on either a bench or the floor. This movement is usually performed for moderate to high reps for a burn and pump as part of an arm-focused workout.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Low-cable cross-over",
+    "Description": "The low-cable cross-over is an isolation movement that uses a cable stack to target the upper portion of the pectoral muscles. It is common in upper-body and chest-focused muscle-building workouts, often in combination with presses or flyes from other angles to target all portions of the chest.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Low cable overhead triceps extension",
+    "Description": "The low cable overhead triceps extension is a single-joint isolation exercise for building the triceps. It involves lying on a bench and then driving the rope handle to full extension. It is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of an upper-body or arm-focused workout.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Linear Acceleration Wall Drill",
+    "Description": "",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Leverage Shrug",
+    "Description": "",
+    "Muscle_Group": "Traps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Leverage Incline Chest Press",
+    "Description": "",
+    "Muscle_Group": "Chest",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Leverage Decline Chest Press",
+    "Description": "",
+    "Muscle_Group": "Chest",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Leverage Chest Press",
+    "Description": "The machine chest press is an upper body exercise targeting the pectoral muscles.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Leg Press",
+    "Description": "The leg press is a machine exercise targeting the quadriceps. Itâ€™s favorite among lifters who prefer the seated position to standing with a load on the spine.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Leg Extensions",
+    "Description": "The leg extension is an isolation exercise for the quads.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Lat pull-down",
+    "Description": "The lat pull-down is a cable-based exercise that's ubiquitous in gyms around the world. This back builder is easy to learn and highly effective at building back size and strength. It's usually trained in moderate to high reps, such as 8-12 reps per set. If grip strength is a limitation, you can wear wrist straps.",
+    "Muscle_Group": "Lats",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Landmine twist",
+    "Description": "The landmine twist is a rotational abdominal movement performed using an angled barbell anchored at floor level in a landmine device. It can also be performed by sticking a barbell in the corner of a room, preferably in a towel to protect the walls. It targets the deep muscles of the core, including both the obliques and the transversus abdominis. It can be done fast or slow, for time or reps, either in traditional muscle-focused rep ranges such as 8-12 reps per side or for higher rep ranges.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Knees tucked crunch",
+    "Description": "The knees tucked crunch is a core exercise that involves performing a crunch while keeping the knees bent in a 90-degree position. It primarily targets the rectus abdominis or 'six-pack' muscles. It can be performed for time or reps as part of any abs-focused circuit or workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Kneeling Squat",
+    "Description": "",
+    "Muscle_Group": "Glutes",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Kneeling cable triceps extension",
+    "Description": "The kneeling cable triceps extension is a single-joint exercise meant to isolate the triceps muscles using a high pully on a cable stack and a bench. It can also be performed in a tall-kneeling stance from a low pully. It is most commonly used in muscle-building triceps or arm workouts.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Kneeling cable oblique crunch",
+    "Description": "The kneeling cable oblique crunch is a popular core isolation exercise using a rope attachment and cable stack while kneeling on the floor. It primarily targets the obliques and rectus abdominis or 'six-pack' muscles, but also strengthens the deep core muscles. It is most commonly performed for moderate to high reps, such as 8-12 reps per set or higher.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Kneeling Cable Crunch With Alternating Oblique Twists",
+    "Description": "",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Cables"
+  },
+  {
+    "Exercise_Name": "Kneeling cable crunch",
+    "Description": "The kneeling cable crunch is a popular core isolation exercise using a rope attachment and cable stack while kneeling on the floor. It primarily targets the rectus abdominis or 'six-pack' muscles, but also strengthens the deep core muscles. It is most commonly performed early in an ab workout, usually in moderate to high reps, such as 8-12 reps per set or higher.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Kettlebell Turkish Get-Up (Squat style)",
+    "Description": "",
+    "Muscle_Group": "Shoulders",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Kettlebell thruster",
+    "Description": "The kettlebell thruster is a popular kettlebell movement that combines a kettlebell front squat with a kettlebell press, while holding the bell in a goblet or bottoms-up grip. It is preceded by a clean at the start of each set, and you can perform a clean between each rep if you choose. It can be trained in traditional strength or muscle-building rep ranges, in circuit or fat-loss training, or as part of a larger kettlebell combination or complex.",
+    "Muscle_Group": "Glutes",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Kettlebell sumo deadlift high pull",
+    "Description": "The kettlebell sumo deadlift high pull is a dynamic kettlebell exercise that focuses on the muscles of the posterior chain, including the hamstrings, glutes, traps, rear delts, and upper back. It can be done in lower reps for power or strength, or higher reps for conditioning and fat loss. It can also be a component of a circuit-style kettlebell workout, either for time or reps.",
+    "Muscle_Group": "Traps",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Kettlebell Pistol Squat",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Kettlebell pass-through lunge",
+    "Description": "The kettlebell pass-through lunge is a dynamic leg and core exercise in which a lifter passes a weight under their front leg during lunges. It is a unique coordination challenge, but also challenging to the musculature of the abdomen, lower body, shoulders, and upper back. It is most commonly performed for higher reps, such as 10-15 reps per side, or for time. It can work in circuit-style workouts, or in lower-body or full-body time-efficient training.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Kettlebell One-Legged Deadlift",
+    "Description": "The kettlebell single-leg deadlift is a variation on the kettlebell deadlift where one foot stays planted on the ground while the other raises into the air at the bottom of the movement. It's popular in lower-body training for strength and muscle building, but also trains balance, grip, and the core muscles.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Kettlebell alternating renegade row",
+    "Description": "The kettlebell alternating renegade row combines rowing and core training into a single difficult movement. It's popular in time-efficient strength and muscle-building workouts, as well as in circuit-style training.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Jumping rope",
+    "Description": "Jumping rope is a classic conditioning exercise that is popular with everyone from children to boxers to CrossFit athletes. It targets many different muscles, including the calves, glutes, shoulders, and upper back, and is great for everything from fat loss to improving overall athletic performance.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Jumping jack-",
+    "Description": "The jumping jack is a classic calisthenics exercise to improve overall conditioning. Itâ€™s one the most recognizable exercises on the planet, and itâ€™s almost synonymous with training for military recruits. It can be done for time or reps, often in dynamic warm-ups or to mobilize the hips and shoulders.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Jog In Place",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Isometric Wipers",
+    "Description": "The typewriter push-up is an advanced push-up variation where the hands are extra wide and you lower toward each hand in alternating reps. It is more challenging to each working arm than traditional push-ups and also stretches and challenges the chest.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Incline Push-Up",
+    "Description": "The hands-elevated push-up is a variation on the push-up, a body-weight standard. The hands are elevated, so that your body is aligned at an angle to the floor rather than parallel.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Incline Hammer Curls",
+    "Description": "",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Incline face-down bar front raise",
+    "Description": "The incline face-down bar front raise is an upper-body exercise targeting the shoulders. Because it is performed face down on an angled bench, it has a greater range of motion than standing or upright-seated raises and hits the shoulders from a different angle. Raise variations are usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of upper-body or shoulder-focused training.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "E-Z Curl Bar"
+  },
+  {
+    "Exercise_Name": "Incline EZ-bar skullcrusher",
+    "Description": "The incline EZ-bar skullcrusher is a popular exercise targeting the triceps muscles. The incline angle helps to target the long head of the triceps in particular. This exercise is usually performed for moderate to high reps as part of an upper-body or arm-focused workout.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Incline dumbbell row",
+    "Description": "The incline dumbbell row is an upper-body exercise targeting the lats (latissimus dorsi) and upper-back muscles, as well as the biceps. Performing it on an incline bench helps target the lower lats in particular. Dumbbell row variations are usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of the upper-body or back-focused portion of a workout.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Incline dumbbell reverse fly",
+    "Description": "The incline dumbbell reverse fly is an upper-body exercise targeting the posterior or rear deltoids, as well as the postural muscles of the upper back. Because it targets such small muscles, this exercise is usually performed with light weight for high reps, such as 10-15 reps per set or more.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Incline dumbbell front raise",
+    "Description": "The incline dumbbell front raise is an upper-body exercise targeting the shoulders. Because it is performed face down on an angled bench, it has a greater range of motion than standing or upright-seated raises and hits the shoulders from a different angle. Raise variations are usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of upper-body or shoulder-focused training.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Incline Dumbbell Flyes",
+    "Description": "The incline dumbbell chest fly is an upper body isolation exercise targeting the upper chest and is typically used with aesthetic goals in mind. It will require less weight than an incline press, which makes it a great hypertrophy exercise with high reps.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Incline Dumbbell Bench With Palms Facing In",
+    "Description": "",
+    "Muscle_Group": "Chest",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Incline dumbbell bench press",
+    "Description": "The incline dumbbell bench press is a popular upper-body exercise targeting the upper pectoral muscles. While it can be a strength-focused movement, it is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of upper-body or chest-focused training.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Incline cable chest press",
+    "Description": "The incline cable chest press is a pressing movement that uses a cable stack and an incline bench to target the upper portion of the pectoral muscles, similar to an incline dumbbell press. It is common in upper-body and chest-focused muscle-building workouts, where it can be effective as a primary movement in classic hypertrophy rep ranges, as a pre-exhaust, or as a high-rep finisher. It is often used in combination with other presses or flyes to target the chest from different angles.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Incline cable chest fly",
+    "Description": "The incline cable chest fly is an isolation movement that uses a cable stack and an incline bench to target the upper portion of the pectoral muscles. It is common in upper-body and chest-focused muscle-building workouts, often after pressing movements like the barbell or dumbbell bench press or as a finishing movement at the end of the workout. It is often used in combination with other flyes to target the chest from different angles.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Hyperextensions With No Hyperextension Bench",
+    "Description": "",
+    "Muscle_Group": "Lower Back",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Hip Circles (Prone)",
+    "Description": "",
+    "Muscle_Group": "Abductors",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Hex-bar deadlift",
+    "Description": "The hex bar deadlift is a variety of deadlift performed in a hexagonal barbell also known as a trap bar. The bar is held with a parallel (palms in) grip outside of the legs. It is biomechanically different from a barbell deadlift in that it lines up with a lifter's center of gravity, rather than placing the weight in front of their body. It activates all of the same muscle groups as conventional or sumo deadlifts, including the glutes, quads, hamstrings, lower back, lats, upper back, and grip.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Hanging toes-to-bar",
+    "Description": "The hanging toes-to-bar is an advanced abdominal exercise in which the lifter touches their feet to a pull-up bar. There are many ways to perform this movement (strict or swinging, arms completely straight or slightly bent, legs straight or bent) each providing unique benefits and challenges. Initially, it may be a difficult move to do for a single rep, but once you build the requisite core, lat, and shoulder strength, it can be performed for higher reps.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Hanging Oblique Knee Raise",
+    "Description": "The hanging oblique crunch an abdominal exercise that targets both the rectus abdominus or â€œsix-packâ€ muscles, and the oblique muscles. It can be performed hanging from a bar, or if grip strength is a limitation, by placing the elbows in ab straps. If hanging from a straight bar is uncomfortable to the wrists or shoulder, you can also perform them hanging with a neutral grip (palms facing one another)",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Hanging leg raise",
+    "Description": "The hanging leg raise is an exercise targeting the abs, but which also works the lats and hip flexors. Instead of resting your forearms on the pads of a captain's chair, you perform these hanging from a bar. Experienced lifters make these look easy, but beginners may need time to build up to sets of 8-12 reps.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Hang Snatch",
+    "Description": "",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Hang Clean - Below the Knees",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Hang Clean",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Handstand push-up",
+    "Description": "The handstand push-up is an exercise targeting the shoulders, although other muscles assist in the completion of the reps. It is common in both CrossFit workouts and advanced bodyweight or calisthenics training. Given the degree of difficulty, beginners will need to progress to this move.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Hands-elevated push-up",
+    "Description": "The hands-elevated push-up is a variation on the classic push-up where the hands are placed on a bench or other elevated surface. Having the hands higher than the feet makes it easier than push-ups on the floor, but also puts the emphasis more on the triceps. It can be used as a substitute for floor push-ups or as a mechanical dropset after maxing out on floor push-ups.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Hammer Grip Incline DB Bench Press",
+    "Description": "",
+    "Muscle_Group": "Chest",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Hammer Curls",
+    "Description": "This curl is performed simultaneously with dumbbells but without wrist supination. Throughout each rep, the wrists remain neutral, like a carpenter hammering a nail.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Hack Squat",
+    "Description": "The hack squat is a machine-based exercise that targets the muscles of the legs, particularly the quadriceps. It is often used as an accessory for squats, but can also be the main lower-body movement in a workout. It is often performed for moderate to high reps, such as 8-12 reps per set or more.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Groiners",
+    "Description": "",
+    "Muscle_Group": "Adductors",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Gorilla Chin/Crunch",
+    "Description": "",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Good Morning",
+    "Description": "The barbell good morning is an exercise that targets glute, hamstring, and lower back development. It is often trained as an accessory movement to the deadlift, but also has value on its own. It is sometimes performed for reps in traditional strength-focused rep ranges such as 5-8 reps per set, but due to the risk posed to the lower back, is rarely treated as a max-effort single-rep lift.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Goblet Squat",
+    "Description": "The goblet squat is a popular lower-body exercise where you hold a kettlebell or dumbbell in front of your chest as if you are supporting a heavy cup or goblet. It can help lifters of all levels improve their squat technique and hip mobility, but can also work as a muscle-building or strength accessory movement for experienced athletes. It also works well in combinations, complexes, and flows with other kettlebell movements like swings, presses, and cleans.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Glute Kickback",
+    "Description": "",
+    "Muscle_Group": "Glutes",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Glute Ham Raise",
+    "Description": "The glute ham raise is an exercise targeting the glutes and hamstrings on a GHD.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Glute bridge",
+    "Description": "The glute bridge is a popular lower-body bodyweight exercise that primarily targets the glutes, but also activates the lower back and hamstrings. It can be performed with body weight alone, or with added resistance such as barbells, dumbbells, or bands. It can be performed for time or reps and works perfectly in a dynamic warm-up for lower-body training, but can also be performed for glute activation anytime.",
+    "Muscle_Group": "Glutes",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Gironda Sternum Chins",
+    "Description": "",
+    "Muscle_Group": "Lats",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Front Squats With Two Kettlebells",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Front Raise And Pullover",
+    "Description": "",
+    "Muscle_Group": "Chest",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Front Plate Raise",
+    "Description": "The plate front raise is a variation of the dumbbell front raise where the lifter holds a weight plate between two hands, rather than using a dumbbell, barbell, or other weight. It can provide variety in a shoulder-focused muscle-building workout, or as part of an upper body or full-body circuit.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Forward lunge",
+    "Description": "The forward lunge is a lower-body bodyweight exercise targeting the quads, glutes, and hamstrings. It can also be performed holding dumbbells or other weights. The forward lunge places more emphasis on the quads than other lunge variations. It can be performed for time or reps in the lower-body portion of any workout.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Flutter Kicks",
+    "Description": "",
+    "Muscle_Group": "Glutes",
+    "Equipment": "Weight Bench"
+  },
+  {
+    "Exercise_Name": "Flexor Incline Dumbbell Curls",
+    "Description": "",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Flat Bench Lying Leg Raise",
+    "Description": "The lying leg lift is a popular bodyweight exercise targeting the muscles of the abs, the rectus abdominis or â€œsix-packâ€ muscles in particular. It can be performed for time or reps in the core-focused portion of any workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Feet-elevated push-up",
+    "Description": "The feet-elevated push-up is a variation on the push-up, a bodyweight standard. The feet are elevated so that your body is aligned at an angle to the floor rather than parallel. This makes it more difficult than push-ups on the floor, but also puts more emphasis on the shoulder muscles. It is often used as a bodyweight substitute for incline presses, or as a burnout movement for a chest or shoulder workout.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Feet-elevated bench dip",
+    "Description": "The feet-elevated bench dip is a popular bodyweight exercise for building the triceps, chest, and shoulders. Elevating the feet brings more chest and shoulder into the movement, but also allows for extra weight on the hips. If these bother your shoulders, try performing them between two benches or chairs rather than on a single bench.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "EZ-bar spider curl",
+    "Description": "The EZ-bar spider curl is an exercise targeting the biceps and performed face down on either an incline bench or on the flat side of a preacher bench. The EZ-bar makes for a more comfortable wrist position, while the angle helps to isolate the biceps and limit involvement of the shoulder muscles. This curl variation is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of upper-body or arm-focused training.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "EZ-Bar Skullcrusher",
+    "Description": "The EZ-bar skullcrusher is a popular exercise targeting the triceps muscles. The EZ-bar is used more often than a straight bar. As for the name, thatâ€™s worst-case scenario. The bar should actually come down behind the head. It is usually performed for moderate to high reps as part of an upper body or arms-focused workout. No need to chase a 1RM on this move!",
+    "Muscle_Group": "Triceps",
+    "Equipment": "E-Z Curl Bar"
+  },
+  {
+    "Exercise_Name": "EZ-Bar Curl",
+    "Description": "The standing EZ-bar curl is an immensely popular exercise targeting the biceps. It is commonly performed for moderate to high reps as part of an upper body or arms-focused workout. Many gyms even have EZ-bars at fixed weights, allowing for easy weight changes.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "E-Z Curl Bar"
+  },
+  {
+    "Exercise_Name": "External Rotation with Cable",
+    "Description": "",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Cables"
+  },
+  {
+    "Exercise_Name": "Exercise Ball Pull-In",
+    "Description": "The exercise ball knee roll-in is an abdominal exercise that involves supporting yourself with your hands in a plank or push-up position and drawing the knees in toward the chest. This is a fairly advanced abdominal move requiring core strength.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Exercise Ball"
+  },
+  {
+    "Exercise_Name": "Exercise ball leg curl",
+    "Description": "The exercise ball leg curl is an exercise targeting the hamstrings. In particular, it targets the knee flexion function of the hamstrings, as opposed to deadlift variations, which target the other hamstring function, hip flexion. Many lifters opt for this exercise when they don't have access to a lying leg curl machine, but it is worth considering even if you already do machine curls.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Exercise Ball"
+  },
+  {
+    "Exercise_Name": "Exercise ball crunch",
+    "Description": "The exercise ball crunch is a popular gym exercise targeting the abdominals. Unlike crunches on the floor or a bench, by using a ball you can increase the range of motion and both stretch and contract the abs on every rep. The ball crunch can be performed for low reps with a slower tempo focusing on a hard contraction, or for higher reps.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Exercise Ball"
+  },
+  {
+    "Exercise_Name": "Elliptical trainer",
+    "Description": "The elliptical trainer is a popular machine for cardiovascular training without the significant impact on your joints of running. On many machines, you can adjust the resistance level to make the movement more difficult for all four limbs. The elliptical is a mainstay in most commercial gyms, and can be equally effective for HIIT-style interval workouts or for longer-duration endurance work.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Elbow-to-knee crunch",
+    "Description": "The elbow-to-knee crunch is a bodyweight exercise targeting the ab muscles, the obliques and rectus abdominis or 'six-pack' muscles in particular. It can be performed for time or reps as part of the ab-focused portion of any workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Elbow plank",
+    "Description": "The elbow plank is a popular isometric abdominal exercise. It is common in all types of exercise programs, as well as in group fitness and yoga classes. It targets the muscles of the core, the deep core or transversus abdominis in particular. It is also often prescribed for time to help back pain or to teach proper bracing.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Dumbbell V-Sit Cross Jab",
+    "Description": "The dumbbell V-sit cross jab is a hybrid movement that trains the abdominal and shoulder muscles simultaneously. It can address multiple muscle groups in a time-efficient muscle-building or circuit-style workout, while also providing a cardiovascular challenge.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell sumo squat",
+    "Description": "The dumbbell sumo squat is a popular lower-body movement using a single dumbbell held in front of the legs. It is performed with a wider than shoulder-width stance, which increases the demand on the glutes, hamstrings, and adductors while still benefiting the quads, core, and upper body. It is usually performed for moderate to high reps, at least 8-12 reps per set, as part of the lower-body portion of a workout.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell suitcase crunch",
+    "Description": "The dumbbell suitcase crunch is a weighted version of a popular abdominal training exercise. The simple addition of a weight makes the suitcase crunch far more difficult, helping build the 'six pack' muscles and providing a different stimulus to the core during training.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Medicine Ball"
+  },
+  {
+    "Exercise_Name": "Dumbbell squat",
+    "Description": "The dumbbell squat is a classic lower-body exercise that targets the quadriceps, hamstrings, and glutes. While this variation is usually performed with relatively light weights for high reps, it can also be used as a substitute for squats or the trap-bar deadlift in any workout.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell spell caster",
+    "Description": "The dumbbell spell caster is an exercise that primarily targets the abdominal muscles such as the obliques. However, it also works shoulders, back, hips, and legs, and demands all of those muscles work together in a coordinated motion. It is usually performed with relatively light weights for moderate to high reps, at least 8-12 reps per side. Make sure to only use a weight you can control.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell skullcrusher",
+    "Description": "The dumbbell skullcrusher is a triceps exercise that has been a staple of bodybuilders for decades. Skullcrushers are usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of an upper-body or arm-focused workout.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell side bend",
+    "Description": "The dumbbell side bend is a popular exercise for targeting the oblique muscles of the abdomen. It is usually performed for relatively high reps, at least 8-12 reps per set or more. It can be performed one side at a time or alternating sides.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell seated box jump",
+    "Description": "The dumbbell seated box jump is an explosive exercise that builds the quadriceps as well as overall lower-body strength and explosiveness. All you need is a box, a bench, and a light dumbbell. Performing it from a seated position eliminates the stretch reflex in the lower body, forcing you to generate more power. This is an advanced move, so consider starting off with box jumps or squat jumps before progressing to this.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell reverse lunge",
+    "Description": "The dumbbell reverse lunge is a popular lower-body movement that targets the muscles of the quads, glutes, hamstrings, and hips. It also works the core and upper-back muscles to maintain posture while the lower body moves. Lunge variations are often performed for moderate to high reps, such as 8-12 reps per leg or more, as part of the lower-body portion of a workout. If this movement hurts your knees, try performing split squats instead.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell Raise",
+    "Description": "",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell preacher curl",
+    "Description": "The dumbbell preacher curl is an exercise that focuses on building the biceps, particularly the biceps peak. All you need is a pair of dumbbells and a preacher bench. It's usually performed for moderate to high reps as part of an upper-body or arms-focused workout.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell Lying Supination",
+    "Description": "",
+    "Muscle_Group": "Forearms",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Dumbbell Lying Rear Lateral Raise",
+    "Description": "The incline dumbbell reverse fly is an upper-body exercise targeting the posterior or rear deltoids, as well as the postural muscles of the upper back. Because it targets such small muscles, this exercise is usually performed with light weight for high reps, such as 10-15 reps per set or more.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell Lying Pronation",
+    "Description": "",
+    "Muscle_Group": "Forearms",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Dumbbell Lunges",
+    "Description": "The dumbbell split squat is a popular lower-body exercise to build strength and muscle one leg at a time. It can be used to teach proper lunge form, but is also valuable on its own when trained in traditional strength-focused rep ranges, such as 5-8 reps per set, or for higher reps to build muscle or for conditioning.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell Goblet Squat",
+    "Description": "The goblet squat is a common exercise used in the early stages of learning to squat, or as a movement in general training programs for building size to the quads, glutes, and hamstrings.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell front raise to lateral raise",
+    "Description": "The dumbbell front raise to lateral raise is a dumbbell complex that combines two exercises that build and strengthen the middle deltoids and the anterior deltoids of the shoulders. It is usually performed one rep of each movement at a time, although you could perform more reps of each, or increase the reps in successive rounds (e.g., 1 rep in round 1, 2 reps in round 2, etc.). No matter how you perform it, it targets both the anterior and medial deltoids, making it a great time-efficient shoulder burnout or accessory movement on an upper-body day.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell front raise",
+    "Description": "The dumbbell front raise is a single-joint exercise targeting the shoulder muscles, particularly the front or anterior deltoids. It is usually performed for moderate to high reps, at least 8-12 reps per set, as part of an upper-body or shoulder-focused workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell Flyes",
+    "Description": "The dumbbell chest fly is a popular exercise that targets the pectoral or chest muscles. It attempts to isolate the chest muscles, stretching and contracting them while limiting involvement of the shoulders. Unlike a press, where the elbows bend and flex, flyes should keep a relatively consistent elbow angle. The motion is sometimes compared to 'hugging a tree.' Dumbbell flyes are usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of a chest or upper-body focused workout.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell floor press",
+    "Description": "The dumbbell floor press is a multijoint pressing exercise performed lying on the floor. It can be performed either with the knees bent or flat. The floor press limits the range of motion you would achieve with a regular dumbbell bench press, but still targets the chest, triceps, and anterior delts. This allows you to press more weight than in a dumbbell bench press, and perhaps put less stress on the shoulders.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell farmer's walk",
+    "Description": "The dumbbell farmer's walk is an exercise with roots in competitive strongman training, but which is also popular in CrossFit and functional training. It can be a challenging finisher to any workout, or work well in fat-loss circuit training or as an accessory movement to heavy lifts like the deadlift.",
+    "Muscle_Group": "Forearms",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Dumbbell external shoulder rotation",
+    "Description": "The dumbbell external shoulder rotation is a lightweight dumbbell exercise intended to maintain the health of the shoulder joints, including the rotator cuffs. It is often used as a warm-up or prehab for a shoulder or chest-focused workout with lots of pressing.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell Bicep Curl",
+    "Description": "The dumbbell biceps curl is a single-joint exercise for building bigger and stronger biceps. Popular among gym goers of all experience levels, this move can be done seated or standing. It is generally performed for moderate to high reps, such as 8-12 reps or higher, as part of the arm-focused portion of a workout.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell bent-over row",
+    "Description": "The dumbbell bent-over row is a popular exercise to develop and strengthen the muscles of the upper and middle back, like the latissimus (lat), lower trapezius, and rear deltoids. It can work equally well in strength, muscle-building, or circuit-style fat-loss workouts.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell Bench Press",
+    "Description": "The dumbbell bench press is a mainstay of workout enthusiasts worldwide. Itâ€™s a classic move for building a bigger, stronger chest. As such, itâ€™s often placed first in mass-building chest workouts.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Dumbbell Alternate Bicep Curl",
+    "Description": "The alternating biceps curl is a single-joint exercise for building bigger and stronger biceps one arm at a time. Popular among gym goers of all experience levels, this move can be done seated or standing. It is generally performed for moderate to high reps, such as 8-12 reps or higher, as part of the arm-focused portion of a workout.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Drop Push",
+    "Description": "",
+    "Muscle_Group": "Chest",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Drag curl",
+    "Description": "The drag curl is a biceps exercise that attempts to remove the influence of the front deltoids on the classic curl. With the elbows kept back, the barbell 'drags' up the torso. It is usually performed for moderate to high reps, such as 8-15 reps per set, as part of an upper-body or arms-focused workout.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Double-arm triceps kick-back",
+    "Description": "The double-arm triceps kick-back is a popular movement to increase size and strength of the triceps. It is usually performed for moderate to high reps, at least 8-12 reps, as part of an upper-body or arm-focused workout.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Double Leg Butt Kick",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Dip Machine",
+    "Description": "The dip machine is a machine exercise that mimics a triceps dip, a bodyweight exercise performed on parallel bars or on a pull-up and dip station. It targets the triceps first, but also stretches and strengthens the chest and shoulders. Dips with a triceps focus are usually performed with an upright torso, the knees bent and crossed, and the arms close to the body. Dips can be performed for low reps for strength or higher reps for muscle growth.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Decline Smith Press",
+    "Description": "The Smith machine decline bench press is a machine-based exercise targeting the chest muscles, particularly the lower pectoral muscles. The Smith machine mimics a barbell but provides more stability. This movement is often performed for moderate to high reps, such as 8-12 reps per set or more, as part of a chest or upper-body workout.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Decline reverse crunch",
+    "Description": "The decline reverse crunch is a popular bodyweight exercise targeting the abdominal muscles, particularly the lower abs. It is usually performed for high reps, such as 10-15 reps per set or more, as part of the ab-focused portion of a workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Decline Push-Up",
+    "Description": "The feet-elevated push-up is a variation on the push-up, a body-weight standard. The feet are elevated, so that your body is aligned at an angle to the floor rather than parallel.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Decline oblique crunch",
+    "Description": "The decline oblique crunch is a popular bodyweight exercise targeting the obliques and the rectus abdominis or 'six-pack' muscles. It is usually performed for high reps, such as 10-15 reps per set or more, as part of the ab-focused portion of a workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "None"
+  },
+  {
+    "Exercise_Name": "Decline EZ-bar skullcrusher",
+    "Description": "The decline EZ-bar skullcrusher is a popular exercise targeting the triceps muscles. The angle of the bench creates a greater range of motion than flat bench skullcrushers, as well as targeting the lateral head of the muscle. This exercise is usually performed for moderate to high reps as part of an upper-body or arm-focused workout.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "E-Z Curl Bar"
+  },
+  {
+    "Exercise_Name": "Decline Dumbbell Triceps Extension",
+    "Description": "",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Decline Dumbbell Flyes",
+    "Description": "The decline dumbbell chest fly is an upper body isolation exercise targeting the lower chest. It will require less weight than a decline press, which makes it a great hypertrophy exercise with high reps.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Decline dumbbell bench press",
+    "Description": "The decline dumbbell bench press is a popular upper-body exercise targeting the lower pectoral muscles. While it can be a strength-focused movement, it is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of upper-body or chest-focused training.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Decline Crunch",
+    "Description": "The decline crunch is an effective core exercise targeting the rectus abdominis.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Decline Close-Grip Bench To Skull Crusher",
+    "Description": "",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Decline barbell bench press",
+    "Description": "The decline barbell bench press is a popular upper-body exercise targeting the lower pectoral muscles. While it can be a strength-focused movement, it is usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of upper-body or chest-focused training.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Decline bar press sit-up",
+    "Description": "The decline bar press sit-up is a weighted core exercise targeting the abdominal muscles, particularly the lower abs. It also challenges the shoulders and upper back to move the weight. Weighted sit-up variations are usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of the core-focused portion of a workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Deadlift with Chains",
+    "Description": "",
+    "Muscle_Group": "Lower Back",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Deadlift with Bands",
+    "Description": "",
+    "Muscle_Group": "Lower Back",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Dead bug reach",
+    "Description": "The dead bug reach is an exercise for strengthening the core in which you alternate lowering your opposing arm and leg simultaneously, controlling the movement with the abdominal muscles. It can be part of a dynamic warm-up to activate the core for other athletics or lifting, or be performed in a circuit or on its own in the ab-focused portion of any workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Crunches",
+    "Description": "The crunch is a popular core exercise targeting the rectus abdominis, or 'six-pack' muscles, as well as the obliques. It has been the centerpiece of many ab-focused workouts, due to both its simplicity and the intense burn and mind-muscle connection it produces. It can be performed for time or reps as part of the ab-focused portion of any workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Crunch - Hands Overhead",
+    "Description": "",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Cross-body hammer curl",
+    "Description": "The cross-body hammer curl is a dumbbell exercise that targets the biceps, brachialis, and forearm muscles. Rather than lifting the weights directly in front of the body, you lift them across the torso. Throughout each rep, the wrists remain neutral, like a carpenter hammering a nail. This helps isolate the brachialis muscles on each arm. It is generally performed for moderate to high reps, such as 8-12 reps or more, as part of the arm-focused portion of a workout.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Cross-Body Crunch",
+    "Description": "The elbow-to-knee crunch is a bodyweight exercise targeting the ab muscles, the obliques and rectus abdominis or 'six-pack' muscles in particular. It can be performed for time or reps as part of the ab-focused portion of any workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Concentration curl",
+    "Description": "The concentration curl is a classic exercise for building the biceps one arm at a time. It can be performed bent over or kneeling, but is more often performed seated on a bench. It's great for emphasizing the biceps peak and is often used to finish a biceps workout. Like most curl variations, these are usually performed for moderate to high reps, such as 8-12 reps per set or more.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Cocoons",
+    "Description": "The cocoon crunch is a bodyweight exercise targeting the ab muscles, the rectus abdominis or 'six-pack' muscles in particular. It involves bringing your knees to your chest and your arms from overhead to center. It can be performed for time or reps as part of the ab-focused portion of any workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Close-grip pull-down",
+    "Description": "The close-grip pull-down is a variation on the lat pull-down that is performed with an overhand grip and the hands slightly closer than shoulder-width apart. This increases the range of motion beyond wider grips, and may increase the time under tension in each rep. This variation is usually performed for moderate to high reps as part of a back or upper-body workout.",
+    "Muscle_Group": "Lats",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Close-Grip Front Lat Pulldown",
+    "Description": "The close-grip pull-down is a variation on the lat pull-down, acable-based exercise machine thatâ€™s ubiquitous in gyms around the world. This back builder is easy to learn and highly effective, allowing for variable resistance depending on where you place the pin in the stack.",
+    "Muscle_Group": "Lats",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Close-grip EZ-bar curl",
+    "Description": "The close-grip EZ-bar curl is an exercise targeting the biceps, particularly the long head. The main difference between this exercise and standard EZ-bar curls is that the hands are positioned closer together on the bar. It is thought that this helps build the outer biceps head and the peak. This curl variation is usually performed for moderate to high reps, such as 8-12 reps per set.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Close-grip EZ-bar bench press",
+    "Description": "The close-grip EZ-bar bench press is an exercise targeting the chest, shoulders, and triceps. This move is more commonly done with a straight bar and is often only performed with an EZ-bar as part of a complex of movements such as pull-overs or skullcrushers.",
+    "Muscle_Group": "Chest",
+    "Equipment": "E-Z Curl Bar"
+  },
+  {
+    "Exercise_Name": "Close-grip bench press",
+    "Description": "The close-grip bench press is a popular exercise targeting the triceps and chest. The main difference between this exercise and the standard bench press is that the hands and elbows are placed closer together, which places more of an emphasis on the triceps. The close-grip bench press is often used as an accessory movement for the traditional bench press, or as a triceps builder for arm training. Similar to the bench press, it can be trained in low reps for strength or higher reps for muscle or strength endurance.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Close-grip barbell curl",
+    "Description": "The close-grip barbell curl is a curl variation where the hands are closer than shoulder width. It is thought that this helps build the outer biceps head and the peak. This curl variation is usually performed for moderate to high reps, such as 8-12 reps per set.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Close push-up to wide push-up",
+    "Description": "The close push-up to wide push-up combines two variations of a push-up to emphasize the strengthening of different muscles. The close push-up emphasizes the triceps, while the wide push-up emphasizes the chest and shoulders.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Clock push-up",
+    "Description": "The clock push-up is a series of regular push-ups performed one at a time, moving your hands one step to the side between each one until you've completed a full circle. It targets the same muscles as traditional push-ups, such as the chest, triceps, and shoulders, but adds an endurance and core challenge to traditional push-ups.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Clean from Blocks",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Clean Deadlift",
+    "Description": "",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Clean and press",
+    "Description": "The clean and press is a full-body lift comprised of two movements: the clean, where the bar is pulled from the floor and caught in the front rack position in three pulls or phases, followed by the overhead press. Decades ago, it was contested in the Olympics. Today, it remains a worthy centerpiece of a power and strength training program, and has full-body benefits when done for low reps as well as moderate to high reps.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Clean and jerk",
+    "Description": "The clean and jerk is a full-body lift that is one of two contested lifts in Olympic weightlifting competitions. It is comprised of two movements: the clean, where the bar is pulled from the floor and caught in the front rack position in three pulls or phases, followed by the jerk overhead. The clean and jerk hits every muscle from head to toe and can be the centerpiece of a lifting program. It is also popular in CrossFit and athletic training programs. It is usually performed in low rep ranges, focusing on power and movement quality.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Clean",
+    "Description": "",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Clam",
+    "Description": "",
+    "Muscle_Group": "Abductors",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Chest dip",
+    "Description": "The chest dip is a bodyweight exercise performed on parallel bars or on a pull-up and dip station. It targets the chest, triceps, and shoulders. Dips with a chest focus are usually performed with the torso leaning forward and the elbows angled out from the torso. Dips can be performed for low reps for strength or higher reps for muscle growth.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Chain Handle Extension",
+    "Description": "",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Car driver",
+    "Description": "The car driver is a variation of the plate front raise exercise where the lifter holds a weight plate in front of them and twists it from side to side, similar to a steering wheel. It targets the muscles of the shoulders, the front or anterior deltoids in particular, but is also challenging to the core and upper-back muscles. It can provide variety in a shoulder-focused muscle-building workout or as part of an upper-body or full-body circuit.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Captain's chair knee raise",
+    "Description": "The captain's chair knee raise is a bodyweight exercise that targets the abs. It is performed on an apparatus that allows the forearms to rest on pads and the upright torso to hang freely. Knee raises are often performed for moderate to high reps, such as 8-12 reps or more, as part of ab-focused training.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Calf-Machine Shoulder Shrug",
+    "Description": "",
+    "Muscle_Group": "Traps",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Calf Press On The Leg Press Machine",
+    "Description": "The leg press calf raise is an exercise that uses the leg press machine to work the calves. With the toes and balls of your feet on the platform but heels off, you push forward to work the calves.",
+    "Muscle_Group": "Calves",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Calf Press",
+    "Description": "The standing calf raise is a popular movement to target the calf muscles of the lower leg, and in particular the gastrocnemius muscles. When unweighted, it is usually performed for high reps or for time.",
+    "Muscle_Group": "Calves",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Cable V-bar push-down",
+    "Description": "The cable V-bar push-down is a popular gym exercise for targeting the triceps. It utilizes an angled bar, which can allow you to move heavier weights more comfortably than a straight bar or rope. It is usually performed for moderate to high reps, such as 8-12 reps or more per set, as part of an upper-body or arm-focused workout.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Cable Internal Rotation",
+    "Description": "",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Cable Crossover",
+    "Description": "The cable cross-over is an isolation movement that uses a cable stack to build bigger and stronger pectoral muscles. Since it's done using adjustable pulleys, you can target different parts of your chest by setting the pulleys at different levels. It is common in upper body and chest-focused muscle-building workouts, often as a pre-exhaust at the beginning of a workout, or a finishing movement at the end. It is often in combination with other presses or flyes to target the chest from different angles.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Cable Chest Press",
+    "Description": "",
+    "Muscle_Group": "Chest",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Butt-Ups",
+    "Description": "",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Butterfly",
+    "Description": "The machine chest fly is an exercise targeting the chest. The motion is often compared to bear-hugging a tree trunk. In chest workouts, this exercise often follows compound moves such as the bench press.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Machine"
+  },
+  {
+    "Exercise_Name": "Burpee",
+    "Description": "The burpee is a high-intensity exercise that recruits the entire body to build strength and aerobic capacity. It is common in CrossFit workouts and group fitness classes, but can also be performed for time or reps in any fat-loss or athleticism-focused circuit or workout.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Broad jump",
+    "Description": "The broad jump is an explosive lower-body exercise. It is a common way to measure explosive hip and lower-body strength in athletes. The more explosive you are, the farther you'll be able to jump.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Box Squat with Bands",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Box jump",
+    "Description": "The box jump is an explosive exercise that strengthens the muscles of the lower body, including the quads, glutes, calves, and hamstrings. They also develop power in the lower body while revving the heart rate. Box jumps can be performed for low reps to focus on strength and power, or for higher reps for metabolic conditioning. Most coaches recommend stepping down rather than jumping down between reps.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Bottoms Up",
+    "Description": "The lying leg lift is a popular bodyweight exercise targeting the muscles of the abs, the rectus abdominis or â€œsix-packâ€ muscles in particular. It can be performed for time or reps in the core-focused portion of any workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Bosu Ball Cable Crunch With Side Bends",
+    "Description": "",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Cable"
+  },
+  {
+    "Exercise_Name": "Bodyweight squat",
+    "Description": "The bodyweight squat is a fundamental exercise that strengthens the quads, glutes, and hamstrings. It can be performed as part of a dynamic warm-up, for time or reps during a workout, or for hip and spine mobility any time.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Bodyweight Reverse Lunge",
+    "Description": "The reverse lunge is a lower-body exercise targeting the quads, glutes, and hamstrings. The reverse lunge places more emphasis on the glutes than other lunge variations.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Bodyweight Flyes",
+    "Description": "The double-bar roll-out chest fly is a chest exercise that utilizes two rotating barbells as 'handles' for a chest fly. It targets the muscles of the chest, but is also an intense core workout. It's a tough movement that is usually performed in the chest-focused portion of a workout.",
+    "Muscle_Group": "Chest",
+    "Equipment": "E-Z Curl Bar"
+  },
+  {
+    "Exercise_Name": "Bicycling",
+    "Description": "",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Biceps curl to shoulder press",
+    "Description": "The biceps curl to shoulder press is a dumbbell complex that combines two exercises that build and strengthen the biceps and shoulders or deltoids. It is usually performed one rep of each movement at a time, although you could perform more reps of each, or increase the reps in successive rounds (e.g., 1 rep in round 1, 2 reps in round 2, etc.). No matter how you structure the sets and reps, it is a time-efficient way to hit two crucial upper-body muscles in any workout.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Bent-over dumbbell rear delt row",
+    "Description": "The bent-over dumbbell rear delt row is a popular upper-body exercise that targets the muscles on the backside of the shoulder joint, specifically the medial and rear heads of the deltoid. Since pressing movements build the front and (to a lesser degree) side deltoid heads, this move is often done to promote balanced shoulder development. It is usually performed for high reps, such as 10-15 reps per set or more, as part of a shoulder or upper-body workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Bent Over Two-Dumbbell Row With Palms In",
+    "Description": "",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Bent Over Two-Arm Long Bar Row",
+    "Description": "",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Bent Over Barbell Row",
+    "Description": "The barbell bent-over row is a compound exercise used to build strength and size in both the lower and upper back. It targets nearly all of the muscles in the back, but particularly the lats, rhomboids, and lower back. It is commonly utilized as an accessory movement for the deadlift in powerlifting, but is also popular in strength and muscle-focused upper-body workouts.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Bench Press - Powerlifting",
+    "Description": "",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Behind-the-head skullcrusher",
+    "Description": "The behind-the-head skullcrusher is a variation on a triceps exercise that has been a staple of bodybuilders for decades. In this version, instead of the bar coming down lightly to the forehead, the bar tracks over the top of the head without touching it. Skullcrushers are usually performed for moderate to high reps, such as 8-12 reps per set or more, as part of an upper-body or arm-focused workout. If a straight bar is uncomfortable for your wrists or elbows, try using an angled EZ-bar.",
+    "Muscle_Group": "Triceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Bear crawl sled drag",
+    "Description": "The bear crawl sled drag is an advanced variation of the bear crawl exercise involving added resistance from a sled or other weight. If no sled is available, other viable options include dragging chain, a barbell plate, or a tire. The bear crawl sled drag is an intense full-body movement that targets the cardiovascular system as well as a wide range of muscle groups, particularly the shoulders, core, and legs. It can be done in short bursts for power or circuit training, or for longer durations as cardiovascular conditioning.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Battle ropes",
+    "Description": "Battle ropes are an explosive training tool that involves moving the rope in waves with the other end of the rope anchored at ground level. There are many different types of waves, but the most common is alternating waves with the left and right hands. The battle ropes can be performed for short bursts as power training, for longer durations as cardiovascular training, or as a component of a conditioning or fat-loss circuit.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Barbell walking lunge",
+    "Description": "The barbell walking lunge tests your ability to maintain balance while challenging the quads, glutes, and hamstrings as well as the core muscles. Using a barbell allows you to overload the exercise. It can be performed for moderate reps, such as 8-15 per set or across the gym, or for higher reps as a conditioning and mental toughness challenge.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell upright row",
+    "Description": "The barbell upright row is a barbell exercise that builds stronger and bigger traps. Many lifters combine this move with either their back or shoulder workout since it involves both body parts.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell thruster",
+    "Description": "The barbell thruster is a full-body exercise that incorporates both squatting and pressing in one functional movement. It's especially common in contemporary CrossFit workouts, but also in general strength training. The barbell is usually cleaned into place first, but it could be performed taken from a squat rack in a front-rack position. The thruster can be performed in traditional strength-focused rep ranges to build strength in the press, or in higher reps for full-body conditioning.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell stiff-legged deadlift",
+    "Description": "The barbell stiff-legged deadlift targets the hamstrings, glutes, lower and upper back, as well as the core. It is a popular accessory movement for the deadlift, but also a muscle-building hamstring movement.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell step-up",
+    "Description": "The barbell step-up is a great exercise for building lower-body strength and power. It targets all the same muscles as bodyweight step-ups, such as the quads, glutes, and hamstrings, but allows for greater muscular overload.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell Squat",
+    "Description": "The barbell back squat is a popular compound movement that emphasizes building the lower-body muscle groups and overall strength. It's the classic way to start a leg day, and is a worthy centerpiece to a lower-body training program. The squat is a competitive lift in the sport of powerlifting, but is also a classic measurement of lower-body strength. With the barbell racked on the traps or upper back, the emphasis is placed on the posterior chain but the entire body gets worked. The back squat can be trained in everything from heavy singles to sets of 20 reps or higher.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell shrug",
+    "Description": "The barbell shrug is an exercise targeting the traps (trapezius muscles). It is popular in strength and muscle-focused upper-body training, and is often trained on a shoulder day. With the assistance of straps, it can be loaded heavily, but it is still usually performed for moderate to high reps, such as 8-10 reps per set.",
+    "Muscle_Group": "Traps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell Shoulder Press",
+    "Description": "The seated barbell shoulder pressis a classic exercise for building muscle and strengthening the shoulders, particularly but not exclusively the front heads. The triceps also play a significant roles in pressing the barbell overhead.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell roll-out",
+    "Description": "The barbell roll-out is an abdominal exercise that utilizes a barbell in the place of an ab roller. It is best performed with a barbell that has rotating collars, and is considered more difficult than other ab roller variations. Many lifters may not be able to perform a single rep at first, but once they can perform these for reps, they'll be rewarded with a seriously strong core.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell rear delt bent-over row",
+    "Description": "The barbell rear delt bent-over row is a movement used to target the shoulders as well as the upper-back muscles. It is performed with lighter weights than a traditional barbell bent-over row, and is usually performed for higher reps, such as 8-15 reps per set, as part of a back or upper-body workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell Incline Bench Press Medium-Grip",
+    "Description": "The incline bench press is an upper body compound movement that targets the upper chest.",
+    "Muscle_Group": "Chest",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell Hip Thrust",
+    "Description": "The barbell hip thrust is an exercise that engages the posterior chain, particular the glutes. It involves fully extending your hips while holding a weighted barbell across the midsection.",
+    "Muscle_Group": "Glutes",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell hack squat",
+    "Description": "The barbell hack squat is a variety of deadlift performed with the barbell behind the legs. This forces the lifter into a body position similar to a squat and targets the quads and glutes. It is named after famed strongman George Hackenschmidt, who performed it as an overall leg-building exercise. The barbell hack squat can be used as a substitute for the machine hack squat, or as a lower-body strength and size movement on its own.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell glute bridge",
+    "Description": "The barbell glute bridge is a popular exercise targeting the muscles of the glutes and hamstrings. It can be done as a strength movement on its own, as an activation drill or warm-up for lower-body training, or as a burnout at the end of a lower-body workout.",
+    "Muscle_Group": "Glutes",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell Full Squat",
+    "Description": "The barbell back squat is a popular compound movement that emphasizes building the lower-body muscle groups and overall strength. It's the classic way to start a leg day, and is a worthy centerpiece to a lower-body training program. The squat is a competitive lift in the sport of powerlifting, but is also a classic measurement of lower-body strength. With the barbell racked on the traps or upper back, the emphasis is placed on the posterior chain but the entire body gets worked. The back squat can be trained in everything from heavy singles to sets of 20 reps or higher.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell front squat",
+    "Description": "The barbell front squat is a compound movement that emphasizes building the lower-body muscle groups. With the barbell racked in front of the body on the anterior delts, the front squat emphasizes the quads and glutes, but also upper back and core strength to remain upright. Front squats can be trained as an alternative to back squats, as an accessory movement for either squats or deadlifts, or for strength and muscle on their own. Many lifters and athletes prefer them to back squats, although they can be uncomfortable and difficult to learn at first.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell forward lunge",
+    "Description": "The barbell forward lunge is a popular lower-body exercise targeting the quads, glutes, and hamstrings. Using a barbell allows you to overload the exercise beyond body weight and perform the movement in strength or muscle-focused rep ranges. The forward lunge can be performed as part of a barbell complex, in a circuit, or on its own in the lower-body portion of any workout.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell deficit deadlift",
+    "Description": "The barbell deficit deadlift is a compound exercise targeting the posterior chain. It is commonly utilized in powerlifting training to build pulling strength off the floor, but is also an effective muscle-building movement for the glutes and hamstrings. It is usually performed with lighter weight, and perhaps for higher reps, than traditional deadlifts. If these make your back sore, decrease the deficit and/or wear a weightlifting belt.",
+    "Muscle_Group": "Lower Back",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell Deadlift",
+    "Description": "The barbell deadlift is a compound exercise used to develop overall strength and size in the posterior chain. It is a competition lift in the sport of powerlifting, but is also considered a classic benchmark of overall strength. When performed with the hands outside the knees, it is often called a 'conventional' deadlift. When the feet are wide and the hands are inside the knees, it is a sumo deadlift.",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell Curls Lying Against An Incline",
+    "Description": "",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell Curl",
+    "Description": "The barbell curl is an arm exercise that is also one of the most recognizable movements in all of bodybuilding and fitness. It helps build sleeve-popping biceps and allows heavier loading than many other curl variations. It is usually performed in moderate to high reps, such as 8-12 reps per set, as part of the arm-focused portion of any workout.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell Bulgarian split squat",
+    "Description": "The barbell Bulgarian split squat is a single-leg exercise targeting the quads, glutes, and hamstrings. It is easier to overload with the barbell than when using dumbbells. If balance is an issue, consider using a Smith machine or holding dumbbells at your side instead.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell Bench Press - Medium Grip",
+    "Description": "The bench press is a compound exercise that builds strength and muscle in the chest and triceps. When many people think of listing, the bench press is often the first exercise that comes to mind",
+    "Muscle_Group": "Chest",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell back squat to box",
+    "Description": "The barbell back squat to box is a popular version of a classic lower-body exercise that utilizes a box at the bottom position of the movement. This allows the lifter to customize the depth of the squat, as well as limit the stretch reflex at the bottom of the squat. The movement targets the quadriceps, glutes, and hamstrings. The squat to box can be performed for low reps to build strength or power, or for higher reps to build muscle.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Barbell Ab Rollout - On Knees",
+    "Description": "The barbell roll-out is an abdominal exercise that utilizes a barbell in the place of an ab roller. It is best performed with a barbell that has rotating collars, and is considered more difficult than other ab roller variations. Many lifters may not be able to perform a single rep at first, but once they can perform these for reps, they'll be rewarded with a seriously strong core.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Barbell"
+  },
+  {
+    "Exercise_Name": "Band Skull Crusher",
+    "Description": "",
+    "Muscle_Group": "Triceps",
+    "Equipment": ""
+  },
+  {
+    "Exercise_Name": "Band Hip Adductions",
+    "Description": "",
+    "Muscle_Group": "Adductors",
+    "Equipment": "Bands"
+  },
+  {
+    "Exercise_Name": "Band Good Morning (Pull Through)",
+    "Description": "",
+    "Muscle_Group": "Hamstrings",
+    "Equipment": "Bands"
+  },
+  {
+    "Exercise_Name": "Back extension",
+    "Description": "The back extension is an exercise used to build lower back strength that also targets the hamstrings and glutes. It is often performed on a 45-degree bench with the feet anchored. Unweighted back extensions are often performed for high reps, such as 15-20 reps or more, but the movement can also be performed with added weight in lower rep ranges, such as 8-12 reps per set.",
+    "Muscle_Group": "Lower Back",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Axle Deadlift",
+    "Description": "",
+    "Muscle_Group": "Lower Back",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Atlas Stones",
+    "Description": "",
+    "Muscle_Group": "Lower Back",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Arnold press",
+    "Description": "Named after the iconic bodybuilder and movie star, the Arnold press adds rotation to a classic shoulder press. It allows the hands to rotate naturally, while also hitting all three heads of the deltoids in one motion. It is usually performed for moderate to high reps, such as 8-12 reps or more, as part of the upper-body or shoulder-focused portion of a workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Arms-crossed jump squat",
+    "Description": "The arms-crossed jump squat is an explosive version of the jump squat. Crossing your arms eliminates any extra power that could come from swinging your arms, making the movement extra strict and challenging for the lower body. It can be performed for time or reps and is especially effective in a fat-loss or athleticism-focused circuit or workout.",
+    "Muscle_Group": "Quadriceps",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "Alternating standing shoulder press",
+    "Description": "The alternating standing shoulder press is a popular dumbbell exercise targeting the shoulders. It can be performed in strength-focused rep ranges, such as 5-8 reps per set, or for higher reps to build muscle or for conditioning.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Alternating sit-through with crunch",
+    "Description": "The alternating sit-through with crunch is a full-body movement that starts in a bear crawl position and ends with a leg kicked out to the side. In between reps, you perform a crunch. It is commonly performed for reps or time in bodyweight circuits and animal-style flows, but can also work on its own or as part of a dynamic warm-up or mobility sequence.",
+    "Muscle_Group": "Middle Back",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Alternating Kettlebell Press",
+    "Description": "",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Kettlebells"
+  },
+  {
+    "Exercise_Name": "Alternating incline dumbbell biceps curl",
+    "Description": "The alternating incline dumbbell biceps curl is an exercise targeting the biceps and performed face up on an incline bench. This creates a vertical arm angle which helps to isolate the biceps and limit involvement of the shoulder muscles. This curl variation is usually performed for moderate to high reps, such as 8-12 rep per arm or more, as part of upper-body or arm-focused training.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Alternating dumbbell front raise",
+    "Description": "The alternating dumbbell front raise is a single-joint exercise targeting the shoulder muscles, particularly the front or anterior deltoids. Performing the movement one shoulder at a time gives a momentary rest to each side while the other is working, potentially allowing you to do more reps during each set. It is usually performed for moderate to high reps, at least 8-12 reps per set, as part of an upper-body or shoulder-focused workout.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Alternating Deltoid Raise",
+    "Description": "The dumbbell front raise to lateral raise combines two exercises that build and strengthen the middle deltoids and the anterior deltoids of the shoulders.",
+    "Muscle_Group": "Shoulders",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Alternate Incline Dumbbell Curl",
+    "Description": "The alternating incline dumbbell biceps curl is an exercise targeting the biceps and performed face up on an incline bench. This creates a vertical arm angle which helps to isolate the biceps and limit involvement of the shoulder muscles. This curl variation is usually performed for moderate to high reps, such as 8-12 rep per arm or more, as part of upper-body or arm-focused training.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Alternate Hammer Curl",
+    "Description": "The alternating hammer curl is performed with dumbbells but without wrist supination. Throughout each rep, the wrists remain neutral, like a carpenter hammering a nail.",
+    "Muscle_Group": "Biceps",
+    "Equipment": "Dumbbell"
+  },
+  {
+    "Exercise_Name": "Ab Roller",
+    "Description": "The ab wheel roll-out is an exercise targeting the abdominals, often with an inexpensive wheel device with a handle on either side. Many trainers and strength coaches claim it's one of, if no the best exercise for developing strength in the midsection. Beginners may have to start with a limited range of motion or just wheel planks.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Other"
+  },
+  {
+    "Exercise_Name": "Ab bicycle",
+    "Description": "The ab bicycle is a bodyweight movement that targets the muscles of the abs, the obliques and rectus abdominis or 'six-pack' muscles in particular. It can be performed for time or reps in the ab-focused portion of any workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  },
+  {
+    "Exercise_Name": "3/4 sit-up",
+    "Description": "The 3/4 sit-up is a bodyweight exercise focused on the muscles of the core. It is similar to a sit-up, but stops short of the top position. This keeps constant tension on the abs, making it more difficult than traditional sit-ups. It can be performed for time or for reps, with the feet anchored or free, as part of the ab-focused portion of any workout.",
+    "Muscle_Group": "Abdominals",
+    "Equipment": "Body Only"
+  }
+]
