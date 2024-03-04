@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { View, Button, Modal, StyleSheet, TouchableOpacity, Text, ScrollView } from 'react-native';
+import { View, Button, Modal, StyleSheet, TouchableOpacity, Text, ScrollView, TextInput } from 'react-native';
 import CalendarStrip from 'react-native-calendar-strip';
 import ExerciseItem from './ExerciseItem';
 import { FIREBASE_AUTH, FIREBASE_DB } from '../../FirebaseConfig';
@@ -15,6 +15,8 @@ const ActivityScreen = ({ navigation }) => {
   const [exerciseModalVisible, setExerciseModalVisible] = useState(false);
   const [selectedExercises, setSelectedExercises] = useState([]);
   const [userExercises, setUserExercises] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+
   const db = FIREBASE_DB;
   const userId = FIREBASE_AUTH.currentUser.uid; // Example to get the current user's ID
 
@@ -68,10 +70,23 @@ const ActivityScreen = ({ navigation }) => {
   };
 
   const renderExercises = () => {
-    return Object.keys(exercises).sort().map((letter) => (
+    // Filter exercises based on the search query before rendering
+    const filteredExercises = Object.keys(exercises).reduce((acc, letter) => {
+      const filteredBySearch = exercises[letter].filter(exercise =>
+        exercise.Exercise_Name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+  
+      if (filteredBySearch.length > 0) {
+        acc[letter] = filteredBySearch;
+      }
+  
+      return acc;
+    }, {});
+  
+    return Object.keys(filteredExercises).sort().map((letter) => (
       <View key={letter}>
         <Text style={{ fontWeight: 'bold', fontSize: 18 }}>{letter}</Text>
-        {exercises[letter].map((exercise, index) => (
+        {filteredExercises[letter].map((exercise, index) => (
           <ExerciseItem
             key={index}
             exerciseName={exercise.Exercise_Name}
@@ -96,13 +111,18 @@ const ActivityScreen = ({ navigation }) => {
   // Function to store selected exercises
   const storeSelectedExercises = async () => {
     if (selectedExercises.length > 0) {
-      // Format the selectedDate to a string that can be used as a document ID
       const dateId = selectedDate.toISOString().split('T')[0]; // Converts the date to 'YYYY-MM-DD' format
-  
       const userExercisesRef = doc(db, "Users", userId, "UserExercises", dateId);
+  
+      // Example exercise data structure
+      const exercisesToStore = selectedExercises.map(exerciseName => ({
+        exerciseName,
+        sets: [] // Initially empty, sets can be added later
+      }));
+  
       await setDoc(userExercisesRef, {
         date: selectedDate,
-        exercises: selectedExercises,
+        exercises: exercisesToStore,
       }, { merge: true }); // Using merge: true to update the document if it exists or create a new one if it doesn't
   
       // Reset selected exercises after storing
@@ -130,13 +150,14 @@ const ActivityScreen = ({ navigation }) => {
 
   const fetchUserExercises = async (date) => {
     if (date) {
-      const dateId = date.toISOString().split('T')[0]; // Safely format the date
+      const dateId = date.toISOString().split('T')[0];
       const userExercisesRef = doc(db, "Users", userId, "UserExercises", dateId);
   
       try {
         const docSnap = await getDoc(userExercisesRef);
         if (docSnap.exists()) {
-          setUserExercises(docSnap.data().exercises); // Set the exercises for the selected date
+          const data = docSnap.data();
+          setUserExercises(data.exercises || []); // Safely fallback to an empty array if no exercises
         } else {
           setUserExercises([]); // Handle no exercises found for this date
         }
@@ -144,6 +165,76 @@ const ActivityScreen = ({ navigation }) => {
         console.error("Error fetching user exercises: ", error);
         setUserExercises([]); // Reset or handle error
       }
+    }
+  };
+  
+  const renderUserExercises = () => {
+    return userExercises.map((exercise, index) => (
+      <View key={index} style={styles.exerciseContainer}>
+        <Text style={{ fontWeight: 'bold', fontSize: 22 }}>{exercise.exerciseName}</Text>
+        {exercise.sets.map((set, setIndex) => (
+          <View key={setIndex} style={styles.setRow}>
+            <TextInput
+              style={styles.setInput}
+              placeholder="Reps"
+              value={set.reps}
+              onChangeText={(text) => handleSetChange(exercise.exerciseName, setIndex, 'reps', text)}
+            />
+            <TextInput
+              style={styles.setInput}
+              placeholder="Weight"
+              value={set.weight}
+              onChangeText={(text) => handleSetChange(exercise.exerciseName, setIndex, 'weight', text)}
+            />
+          </View>
+        ))}
+        <Button title="Add Set" onPress={() => handleAddSet(exercise.exerciseName)} />
+      </View>
+    ));
+  };
+
+  const handleAddSet = (exerciseName) => {
+    console.log(`Adding set to ${exerciseName}`);
+    setUserExercises((prevExercises) =>
+      prevExercises.map((exercise) => {
+        // Change here from exercise.name to exercise.exerciseName
+        if (exercise.exerciseName === exerciseName) {
+          console.log(`Found exercise, adding set: `, exercise);
+          return { ...exercise, sets: [...exercise.sets, { reps: '', weight: '' }] };
+        }
+        return exercise;
+      })
+    );
+  };
+  
+  const handleSetChange = (exerciseName, setIndex, field, value) => {
+    setUserExercises((prevExercises) => prevExercises.map((exercise) => {
+        // Change here from exercise.name to exercise.exerciseName
+        if (exercise.exerciseName === exerciseName) {
+            const updatedSets = exercise.sets.map((set, index) => {
+                if (index === setIndex) {
+                    return { ...set, [field]: value };
+                }
+                return set;
+            });
+            return { ...exercise, sets: updatedSets };
+        }
+        return exercise;
+    }));
+  };
+
+  const saveExercisesToFirestore = async () => {
+    const dateId = selectedDate.toISOString().split('T')[0]; // Format as 'YYYY-MM-DD'
+    const userExercisesRef = doc(db, "Users", userId, "UserExercises", dateId);
+  
+    try {
+      await setDoc(userExercisesRef, {
+        date: selectedDate,
+        exercises: userExercises
+      }, { merge: true }); // merge: true to update existing document or create a new one if it doesn't exist
+      console.log("Exercises saved successfully");
+    } catch (error) {
+      console.error("Error saving exercises to Firestore:", error);
     }
   };
 
@@ -187,15 +278,13 @@ const ActivityScreen = ({ navigation }) => {
         <View style={styles.centeredView}>
           <ScrollView style={styles.modalView} contentContainerStyle={styles.modalContentContainer}>
             <Text style={styles.modalText}>Exercises for {selectedDate.toDateString()}</Text>
-            {userExercises.length > 0 ? (
-              userExercises.map((exercise, index) => (
-                <Text key={index} style={styles.exerciseText}>{exercise}</Text>
-              ))
-            ) : (
-              <Text>No exercises added for this date.</Text>
-            )}
+            {/* Use the renderUserExercises function here to display the exercises and their details */}
+            {renderUserExercises()}
             <Button title="Add Exercise" onPress={() => setExerciseModalVisible(true)} />
-            <Button title="Close" onPress={() => setModalVisible(!modalVisible)} />
+            <Button title="Close" onPress={async () => {
+              await saveExercisesToFirestore();
+              setModalVisible(!modalVisible);
+            }} />
           </ScrollView>
         </View>
       </Modal>
@@ -210,10 +299,15 @@ const ActivityScreen = ({ navigation }) => {
         }}>
         <View style={styles.centeredView}>
           <View style={styles.ExercisesModalView}>
-            <Text style={styles.modalText}>Select an Exercise</Text>
-              <ScrollView>
-                {renderExercises()}
-              </ScrollView>
+            <TextInput
+              style={styles.searchBar}
+              placeholder="Search for an exercise"
+              value={searchQuery}
+              onChangeText={setSearchQuery}
+            />
+            <ScrollView>
+              {renderExercises()}
+            </ScrollView>
             <Button title="Done" onPress={handleDoneButton} />
           </View>
         </View>
@@ -299,5 +393,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginBottom: 20,
+  },
+  searchBar: {
+    fontSize: 16,
+    padding: 10,
+    marginVertical: 10,
+    borderWidth: 1,
+    borderColor: '#ddd',
+    borderRadius: 20,
+    backgroundColor: '#fff',
   },
 });
