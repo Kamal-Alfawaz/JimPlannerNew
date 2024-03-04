@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { View, Button, Modal, StyleSheet, TouchableOpacity, Text, ScrollView } from 'react-native';
 import CalendarStrip from 'react-native-calendar-strip';
+import ExerciseItem from './ExerciseItem';
 import { FIREBASE_AUTH, FIREBASE_DB } from '../../FirebaseConfig';
 import { collection, getDocs, query, orderBy, doc, setDoc, getDoc} from 'firebase/firestore';
 import DateTimePicker from '@react-native-community/datetimepicker';
@@ -71,22 +72,18 @@ const ActivityScreen = ({ navigation }) => {
       <View key={letter}>
         <Text style={{ fontWeight: 'bold', fontSize: 18 }}>{letter}</Text>
         {exercises[letter].map((exercise, index) => (
-          <TouchableOpacity
+          <ExerciseItem
             key={index}
-            style={{
-              backgroundColor: selectedExercises.includes(exercise.Exercise_Name) ? '#ddd' : '#fff',
-              padding: 10,
-              marginVertical: 2,
-            }}
-            onPress={() => handleSelectExercise(exercise.Exercise_Name)}>
-            <Text>{exercise.Exercise_Name}</Text>
-          </TouchableOpacity>
+            exerciseName={exercise.Exercise_Name}
+            isSelected={selectedExercises.includes(exercise.Exercise_Name)}
+            onSelect={handleSelectExercise}
+          />
         ))}
       </View>
     ));
   };
 
-  const handleSelectExercise = (exerciseName) => {
+  const handleSelectExercise = useCallback((exerciseName) => {
     setSelectedExercises(prev => {
       if (prev.includes(exerciseName)) {
         return prev.filter(name => name !== exerciseName); // Unselect
@@ -94,7 +91,7 @@ const ActivityScreen = ({ navigation }) => {
         return [...prev, exerciseName]; // Select
       }
     });
-  };
+  }, []);
 
   // Function to store selected exercises
   const storeSelectedExercises = async () => {
@@ -127,7 +124,7 @@ const ActivityScreen = ({ navigation }) => {
 
   const handleDoneButton = async () => {
     await storeSelectedExercises(); // Store the selected exercises
-    await fetchUserExercises(selectedDate);
+    await fetchUserExercises(selectedDate); 
     setExerciseModalVisible(false); // Close the modal after storing
   };
 
