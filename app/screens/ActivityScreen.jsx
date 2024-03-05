@@ -142,11 +142,18 @@ const ActivityScreen = ({ navigation }) => {
     }
   };
 
-  const handleDoneButton = async () => {
-    await storeSelectedExercises(); // Store the selected exercises
-    await fetchUserExercises(selectedDate); 
-    setExerciseModalVisible(false); // Close the modal after storing
+  const handleDoneButton = () => {
+    // Map selectedExercises to userExercises structure
+    const updatedUserExercises = selectedExercises.map(exerciseName => {
+      // Find if the exercise already exists in userExercises to preserve its sets if any
+      const existingExercise = userExercises.find(ex => ex.exerciseName === exerciseName);
+      return existingExercise || { exerciseName, sets: [] }; // Keep existing sets or start with empty
+    });
+  
+    setUserExercises(updatedUserExercises);
+    setExerciseModalVisible(false); // Close the modal
   };
+  
 
   const fetchUserExercises = async (date) => {
     if (date) {
@@ -168,24 +175,33 @@ const ActivityScreen = ({ navigation }) => {
     }
   };
   
-  const renderUserExercises = () => {
-    return userExercises.map((exercise, index) => (
-      <View key={index} style={styles.exerciseContainer}>
-        <Text style={{ fontWeight: 'bold', fontSize: 22 }}>{exercise.exerciseName}</Text>
+  const renderUserExercisesInModal = () => {
+    return userExercises.map((exercise, exerciseIndex) => (
+      <View key={exerciseIndex} style={styles.exerciseContainer}>
+        <Text style={{ fontWeight: 'bold', fontSize: 20, textAlign: 'center' }}>{exercise.exerciseName}</Text>
         {exercise.sets.map((set, setIndex) => (
           <View key={setIndex} style={styles.setRow}>
-            <TextInput
-              style={styles.setInput}
-              placeholder="Reps"
-              value={set.reps}
-              onChangeText={(text) => handleSetChange(exercise.exerciseName, setIndex, 'reps', text)}
-            />
-            <TextInput
-              style={styles.setInput}
-              placeholder="Weight"
-              value={set.weight}
-              onChangeText={(text) => handleSetChange(exercise.exerciseName, setIndex, 'weight', text)}
-            />
+            <Text style={{ fontWeight: 'bold', fontSize: 18, marginRight: 10 }}>{setIndex + 1}</Text>
+            <View style={styles.inputExercisesContainer}>
+              <Text>Reps</Text>
+              <TextInput
+                style={styles.inputExercises}
+                placeholder="Reps"
+                value={set.reps}
+                keyboardType="numeric"
+                onChangeText={(text) => handleSetChange(exercise.exerciseName, setIndex, 'reps', text)}
+              />
+            </View>
+            <View style={styles.inputExercisesContainer}>
+              <Text>Weight</Text>
+              <TextInput
+                style={styles.inputExercises}
+                placeholder="Weight"
+                value={set.weight}
+                keyboardType="numeric"
+                onChangeText={(text) => handleSetChange(exercise.exerciseName, setIndex, 'weight', text)}
+              />
+            </View>
           </View>
         ))}
         <Button title="Add Set" onPress={() => handleAddSet(exercise.exerciseName)} />
@@ -276,16 +292,24 @@ const ActivityScreen = ({ navigation }) => {
           setModalVisible(!modalVisible);
         }}>
         <View style={styles.centeredView}>
-          <ScrollView style={styles.modalView} contentContainerStyle={styles.modalContentContainer}>
-            <Text style={styles.modalText}>Exercises for {selectedDate.toDateString()}</Text>
-            {/* Use the renderUserExercises function here to display the exercises and their details */}
-            {renderUserExercises()}
-            <Button title="Add Exercise" onPress={() => setExerciseModalVisible(true)} />
-            <Button title="Close" onPress={async () => {
-              await saveExercisesToFirestore();
-              setModalVisible(!modalVisible);
-            }} />
-          </ScrollView>
+          <View style={styles.modalView}>
+            <ScrollView contentContainerStyle={styles.modalContentContainer}>
+              <Text style={styles.modalText}>Exercises for {selectedDate.toDateString()}</Text>
+              {/* Place renderUserExercises function call here to display the exercises and their details */}
+              {renderUserExercisesInModal()}
+            </ScrollView>
+            <View style={{ paddingHorizontal: 10, paddingBottom: 10 }}>
+              <Button title="Add Exercise" onPress={() => {
+                const currentSelectedExerciseNames = userExercises.map(exercise => exercise.exerciseName);
+                setSelectedExercises(currentSelectedExerciseNames);
+                setExerciseModalVisible(true);
+              }} />
+              <Button title="Done" onPress={async () => {
+                await saveExercisesToFirestore();
+                setModalVisible(!modalVisible);
+              }} />
+            </View>
+          </View>
         </View>
       </Modal>
 
@@ -402,5 +426,22 @@ const styles = StyleSheet.create({
     borderColor: '#ddd',
     borderRadius: 20,
     backgroundColor: '#fff',
+  },
+  setRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  inputExercisesContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginRight: 15,
+  },
+  inputExercises: {
+    borderWidth: 1,
+    borderColor: 'lightgrey',
+    padding: 8,
+    width: 60,
+    marginLeft: 5,
   },
 });
