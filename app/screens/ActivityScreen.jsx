@@ -16,6 +16,7 @@ const ActivityScreen = ({ navigation }) => {
   const [selectedExercises, setSelectedExercises] = useState([]);
   const [userExercises, setUserExercises] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
+  const [allUserExercises, setAllUserExercises] = useState([]);
 
   const db = FIREBASE_DB;
   const userId = FIREBASE_AUTH.currentUser.uid; // Example to get the current user's ID
@@ -55,6 +56,11 @@ const ActivityScreen = ({ navigation }) => {
       fetchUserExercises();
     }
   }, [modalVisible]);
+
+  // Call fetchAllUserExercises in useEffect to load when component mounts
+  useEffect(() => {
+    fetchAllUserExercises();
+  }, []); // Ensure this is called once upon component mount
 
   const groupExercises = (exercises) => {
     const grouped = {};
@@ -108,30 +114,77 @@ const ActivityScreen = ({ navigation }) => {
     });
   }, []);
 
-  // Function to store selected exercises
-  const storeSelectedExercises = async () => {
-    if (selectedExercises.length > 0) {
-      const dateId = selectedDate.toISOString().split('T')[0]; // Converts the date to 'YYYY-MM-DD' format
-      const userExercisesRef = doc(db, "Users", userId, "UserExercises", dateId);
-  
-      // Example exercise data structure
-      const exercisesToStore = selectedExercises.map(exerciseName => ({
-        exerciseName,
-        sets: [] // Initially empty, sets can be added later
-      }));
-  
-      await setDoc(userExercisesRef, {
-        date: selectedDate,
-        exercises: exercisesToStore,
-      }, { merge: true }); // Using merge: true to update the document if it exists or create a new one if it doesn't
-  
-      // Reset selected exercises after storing
-      setSelectedExercises([]);
-      // Close the modal and optionally refresh the exercises display
-      setExerciseModalVisible(false);
-      fetchUserExercises(); // Refresh the list to show the latest exercises
+  const fetchAllUserExercises = async () => {
+    try {
+      console.log("test");
+        const userExercisesRef = collection(db, "Users", userId, "UserExercises");
+        const querySnapshot = await getDocs(userExercisesRef);
+        const allExercises = [];
+        querySnapshot.forEach((doc) => {
+            const data = doc.data();
+            if (data && Array.isArray(data.exercises)) {
+                allExercises.push({
+                    date: doc.id,
+                    exercises: data.exercises,
+                });
+            }
+        });
+        setAllUserExercises(allExercises); // Update this line accordingly
+    } catch (error) {
+        console.error("Error fetching all user exercises: ", error);
     }
+};
+
+  
+
+  // When rendering:
+  const renderAllUserExercises = () => {
+    console.log("userExercises:", allUserExercises); // Add this line to debug
+    return allUserExercises && allUserExercises.length > 0 ? (
+      allUserExercises.map((dayExercise, index) => (
+        <View key={index}>
+          <Text>Date: {dayExercise.date}</Text>
+          <Text>Exercises:</Text>
+          {dayExercise.exercises?.slice(0, 2).map((exercise, exerciseIndex) => (
+            <View key={exerciseIndex}>
+              <Text>{exercise.exerciseName}</Text>
+              {exercise.sets?.map((set, setIndex) => (
+                <Text key={setIndex}>{`${set.reps} reps x ${set.weight} kg`}</Text>
+              ))}
+            </View>
+          ))}
+        </View>
+      ))
+    ) : (
+      <Text>No exercises found.</Text>
+    );
   };
+  
+
+  // Function to store selected exercises
+  // const storeSelectedExercises = async () => {
+  //   if (selectedExercises.length > 0) {
+  //     const dateId = selectedDate.toISOString().split('T')[0]; // Converts the date to 'YYYY-MM-DD' format
+  //     const userExercisesRef = doc(db, "Users", userId, "UserExercises", dateId);
+  
+  //     // Example exercise data structure
+  //     const exercisesToStore = selectedExercises.map(exerciseName => ({
+  //       exerciseName,
+  //       sets: [] // Initially empty, sets can be added later
+  //     }));
+  
+  //     await setDoc(userExercisesRef, {
+  //       date: selectedDate,
+  //       exercises: exercisesToStore,
+  //     }, { merge: true }); // Using merge: true to update the document if it exists or create a new one if it doesn't
+  
+  //     // Reset selected exercises after storing
+  //     setSelectedExercises([]);
+  //     // Close the modal and optionally refresh the exercises display
+  //     setExerciseModalVisible(false);
+  //     fetchUserExercises(); // Refresh the list to show the latest exercises
+  //   }
+  // };
 
   const onDateChange = (event, newSelectedDate) => {
     setDatePickerVisible(false);
@@ -208,6 +261,7 @@ const ActivityScreen = ({ navigation }) => {
       </View>
     ));
   };
+  
 
   const handleAddSet = (exerciseName) => {
     console.log(`Adding set to ${exerciseName}`);
@@ -245,7 +299,6 @@ const ActivityScreen = ({ navigation }) => {
   
     try {
       await setDoc(userExercisesRef, {
-        date: selectedDate,
         exercises: userExercises
       }, { merge: true }); // merge: true to update existing document or create a new one if it doesn't exist
       console.log("Exercises saved successfully");
@@ -265,6 +318,7 @@ const ActivityScreen = ({ navigation }) => {
         dateNameStyle={{ color: '#000' }}
         iconContainer={{ flex: 0.1 }}
       />
+      {renderAllUserExercises()}
       <Button onPress={() => navigation.navigate('Details')} title="Open Details" />
       <Button onPress={() => FIREBASE_AUTH.signOut()} title="Logout" />
       <TouchableOpacity
@@ -304,10 +358,12 @@ const ActivityScreen = ({ navigation }) => {
                 setSelectedExercises(currentSelectedExerciseNames);
                 setExerciseModalVisible(true);
               }} />
-              <Button title="Done" onPress={async () => {
+              <Button title="Save" onPress={async () => {
                 await saveExercisesToFirestore();
+                await fetchAllUserExercises();
                 setModalVisible(!modalVisible);
               }} />
+              <Button title="Cancel" onPress={() => setModalVisible(!modalVisible)}/>
             </View>
           </View>
         </View>
