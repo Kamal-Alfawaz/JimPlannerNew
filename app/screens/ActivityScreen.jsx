@@ -133,64 +133,42 @@ const ActivityScreen = ({ navigation }) => {
     } catch (error) {
         console.error("Error fetching all user exercises: ", error);
     }
-};
+  };
 
-  
-
-  // When rendering:
   const renderAllUserExercises = () => {
-    console.log("userExercises:", allUserExercises); // Add this line to debug
+    console.log("allUserExercises:", allUserExercises);
     return allUserExercises && allUserExercises.length > 0 ? (
       allUserExercises.map((dayExercise, index) => (
-        <View key={index}>
-          <Text>Date: {dayExercise.date}</Text>
-          <Text>Exercises:</Text>
+        <TouchableOpacity key={index} onPress={() => handleDatePress(dayExercise.date)} style={styles.dayExerciseContainer}>
+          <Text style={styles.dateHeader}>{dayExercise.date}</Text>
           {dayExercise.exercises?.slice(0, 2).map((exercise, exerciseIndex) => (
-            <View key={exerciseIndex}>
-              <Text>{exercise.exerciseName}</Text>
+            <View key={exerciseIndex} style={styles.exerciseItemContainer}>
+              <Text style={styles.exerciseName}>{exercise.exerciseName}</Text>
               {exercise.sets?.map((set, setIndex) => (
-                <Text key={setIndex}>{`${set.reps} reps x ${set.weight} kg`}</Text>
+                <Text key={setIndex} style={styles.setDetail}>
+                  Set {setIndex + 1} x {set.reps} reps, {set.weight} kg
+                </Text>
               ))}
             </View>
           ))}
-        </View>
+        </TouchableOpacity>
       ))
     ) : (
-      <Text>No exercises found.</Text>
+      <Text style={styles.noExercisesFound}>No exercises found.</Text>
     );
   };
   
+  
 
-  // Function to store selected exercises
-  // const storeSelectedExercises = async () => {
-  //   if (selectedExercises.length > 0) {
-  //     const dateId = selectedDate.toISOString().split('T')[0]; // Converts the date to 'YYYY-MM-DD' format
-  //     const userExercisesRef = doc(db, "Users", userId, "UserExercises", dateId);
-  
-  //     // Example exercise data structure
-  //     const exercisesToStore = selectedExercises.map(exerciseName => ({
-  //       exerciseName,
-  //       sets: [] // Initially empty, sets can be added later
-  //     }));
-  
-  //     await setDoc(userExercisesRef, {
-  //       date: selectedDate,
-  //       exercises: exercisesToStore,
-  //     }, { merge: true }); // Using merge: true to update the document if it exists or create a new one if it doesn't
-  
-  //     // Reset selected exercises after storing
-  //     setSelectedExercises([]);
-  //     // Close the modal and optionally refresh the exercises display
-  //     setExerciseModalVisible(false);
-  //     fetchUserExercises(); // Refresh the list to show the latest exercises
-  //   }
-  // };
+  const handleDatePress = (date) => {
+    console.log(`Date ${date} pressed`);
+  };
 
   const onDateChange = (event, newSelectedDate) => {
     setDatePickerVisible(false);
     if (event.type !== 'dismissed' && newSelectedDate) {
-      setSelectedDate(newSelectedDate); // Ensure this is before the fetch call
-      fetchUserExercises(newSelectedDate); // Fetch exercises for the newly selected date
+      setSelectedDate(newSelectedDate);
+      fetchUserExercises(newSelectedDate);
       setModalVisible(true);
     }
   };
@@ -318,7 +296,9 @@ const ActivityScreen = ({ navigation }) => {
         dateNameStyle={{ color: '#000' }}
         iconContainer={{ flex: 0.1 }}
       />
-      {renderAllUserExercises()}
+      <ScrollView style={{ flex: 1 }}>
+        {renderAllUserExercises()}
+      </ScrollView>
       <Button onPress={() => navigation.navigate('Details')} title="Open Details" />
       <Button onPress={() => FIREBASE_AUTH.signOut()} title="Logout" />
       <TouchableOpacity
@@ -434,7 +414,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 4,
     elevation: 5,
-    width: '80%',
+    width: '90%',
   },
   ExercisesModalView:{
     margin: 20,
@@ -499,5 +479,55 @@ const styles = StyleSheet.create({
     padding: 8,
     width: 60,
     marginLeft: 5,
+  },
+  dateText: {
+    textDecorationLine: 'underline',
+    color: 'blue',
+  },
+  dateHeader: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 10,
+    marginBottom: 5,
+  },
+  exercisesHeader: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginLeft: 5,
+    marginTop: 5,
+  },
+  exerciseItem: {
+    fontSize: 16,
+    marginLeft: 15,
+    marginBottom: 5,
+  },
+  exerciseBulletPoint: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  bulletPoint: {
+    width: 5,
+    height: 5,
+    backgroundColor: 'black',
+    borderRadius: 50,
+    marginRight: 5,
+  },
+  dayExerciseContainer: {
+    marginBottom: 20,
+    paddingHorizontal: 10,
+  },
+  exerciseItemContainer: {
+    alignItems: 'center',
+  },
+  setDetail: {
+    textAlign: 'left',
+    fontSize: 16,
+  },
+  exerciseName: {
+    fontWeight: 'bold',
+    fontSize: 18,
+    textAlign: 'center',
+    marginBottom: 5,
   },
 });
