@@ -13,7 +13,6 @@ const SignUp = () => {
     const [dob, setDob] = useState('');
     const [profilePic, setProfilePic] = useState(null);
     const [loading, setLoading] = useState(false);
-    const [gymLocation, setGymLocation] = useState(null);
     const auth = FIREBASE_AUTH;
     const db = FIREBASE_DB;
 
@@ -43,7 +42,7 @@ const SignUp = () => {
                 name: name,
                 dob: dob || null,
                 profilePic: profilePic || null,
-                gymLocation: gymLocation || null,
+                gymLocation: null,
             });
             alert('Check Your Emails!');
         } catch (error) {
@@ -67,7 +66,6 @@ const SignUp = () => {
                 <TextInput value={name} style={styles.input} placeholder='Name' autoCapitalize='none' onChangeText={text => setName(text)} />
                 <TextInput value={email} style={styles.input} placeholder='Email' autoCapitalize='none' onChangeText={text => setEmail(text)} />
                 <TextInput value={dob} style={styles.input} placeholder='Date of Birth (Optional)' autoCapitalize='none' onChangeText={text => setDob(text)} />
-                <TextInput value={gymLocation} style={styles.input} placeholder='Enter Gym Location' autoCapitalize='none' onChangeText={text => setGymLocation(text)} />
                 <TextInput secureTextEntry={true} value={password} style={styles.input} placeholder='Password' autoCapitalize='none' onChangeText={text => setPassword(text)} />
                 {loading ? <ActivityIndicator size="large" color="#0000ff" />
                   : <>

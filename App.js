@@ -4,6 +4,7 @@ import Login from './app/screens/Login';
 import ActivityScreen from './app/screens/ActivityScreen';
 import Details from './app/screens/Details';
 import SignUp from './app/screens/SignUp';
+import Meetup from './app/screens/Meetup';
 import { useEffect, useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { FIREBASE_AUTH } from './FirebaseConfig';
@@ -29,6 +30,7 @@ function App() {
           <>
             <Stack.Screen name="My Todos" component={ActivityScreen} />
             <Stack.Screen name="Details" component={Details} />
+            <Stack.Screen name="Meetup" component={Meetup} />
           </>
         ) : (
           // Unauthenticated flow

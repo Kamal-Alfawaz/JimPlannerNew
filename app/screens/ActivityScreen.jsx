@@ -157,11 +157,13 @@ const ActivityScreen = ({ navigation }) => {
       <Text style={styles.noExercisesFound}>No exercises found.</Text>
     );
   };
-  
-  
 
   const handleDatePress = (date) => {
     console.log(`Date ${date} pressed`);
+    const selectedDayExercises = allUserExercises.find(dayExercise => dayExercise.date === date);
+    setSelectedDate(new Date(date)); // Assuming 'date' is in a format that can be directly used to create a Date object
+    setUserExercises(selectedDayExercises.exercises);
+    setModalVisible(true);
   };
 
   const onDateChange = (event, newSelectedDate) => {
@@ -301,6 +303,7 @@ const ActivityScreen = ({ navigation }) => {
       </ScrollView>
       <Button onPress={() => navigation.navigate('Details')} title="Open Details" />
       <Button onPress={() => FIREBASE_AUTH.signOut()} title="Logout" />
+      <Button onPress={() => navigation.navigate('Meetup')} title="Meetup" />
       <TouchableOpacity
         style={styles.fab}
         onPress={() => setDatePickerVisible(true)}>
