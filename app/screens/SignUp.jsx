@@ -44,7 +44,6 @@ const SignUp = () => {
                 profilePic: profilePic || null,
                 gymLocation: null,
             });
-            alert('Check Your Emails!');
         } catch (error) {
             console.log(error);
             alert('Creation failed: ' + error.message);
