@@ -1,8 +1,9 @@
 import { View, Text, StyleSheet, TextInput, Button, KeyboardAvoidingView, TouchableOpacity, Image, ActivityIndicator } from 'react-native';
 import React, { useState } from 'react';
-import { FIREBASE_AUTH, FIREBASE_DB } from '../../FirebaseConfig';
+import { FIREBASE_AUTH, FIREBASE_DB, FIREBASE_STORAGE } from '../../FirebaseConfig';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import defaultProfilePic from '../../assets/defaultProfilePic.png';
 import * as ImagePicker from 'expo-image-picker';
 
@@ -36,12 +37,25 @@ const SignUp = () => {
         try {
             const response = await createUserWithEmailAndPassword(auth, email, password);
             console.log(response);
+    
+            let profilePicUrl = null;
+    
+            // If a profile picture has been selected, upload it to Firebase Storage
+            if (profilePic) {
+                const file = await fetch(profilePic);
+                const blob = await file.blob();
+    
+                const storageRef = ref(FIREBASE_STORAGE, `profilePictures/${response.user.uid}`);
+                const snapshot = await uploadBytes(storageRef, blob);
+                profilePicUrl = await getDownloadURL(snapshot.ref);
+            }
+    
             const userDocRef = doc(db, 'Users', response.user.uid);
             await setDoc(userDocRef, {
                 email: email,
                 name: name,
                 dob: dob || null,
-                profilePic: profilePic || null,
+                profilePic: profilePicUrl, // Save the URL instead of the file path
                 gymLocation: null,
             });
         } catch (error) {
