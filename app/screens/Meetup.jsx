@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, ScrollView, TouchableOpacity, Button, Image } from 'react-native';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import { FIREBASE_DB, FIREBASE_AUTH } from '../../FirebaseConfig';
-import { doc, setDoc, getDoc, getDocs, collection, writeBatch, arrayUnion } from 'firebase/firestore';
+import { doc, setDoc, getDoc, getDocs, collection, writeBatch, arrayUnion, query, where } from 'firebase/firestore';
 import { orderByDistance, getDistance } from 'geolib';
 import { GOOGLE_API_KEY } from '../../EnvironmentalVar/enviro';
 import defaultProfilePic from '../../assets/defaultProfilePic.png';
@@ -34,49 +34,53 @@ const MeetupScreen = ({ navigation }) => {
 
   useEffect(() => {
     const fetchUsersLocations = async () => {
+      // Fetch all users from Firestore
       const usersSnapshot = await getDocs(collection(FIREBASE_DB, 'Users'));
-      const usersLocations = usersSnapshot.docs
-        .map(doc => ({
-          id: doc.id,
-          ...doc.data(),
-          profilePic: doc.data().profilePic || null,
-        }))
-        .filter(
-          user =>
-            user.gymLocation &&
-            user.gymLocation.lat !== undefined &&
-            user.gymLocation.lng !== undefined &&
-            user.id !== FIREBASE_AUTH.currentUser.uid
-        )
-        .filter(user => !friends.some(friend => friend.id === user.id));
-    
-      if (gymLocation && gymLocation.lat !== undefined && gymLocation.lng !== undefined) {
-        const sortedUsers = orderByDistance(
-          {
-            latitude: gymLocation.lat,
-            longitude: gymLocation.lng,
-          },
-          usersLocations.filter(user => user.lat !== undefined && user.lng !== undefined)
-        );
-    
-        const usersWithDistance = sortedUsers.map(user => ({
-          name: user.name,
+      const usersData = usersSnapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+        profilePic: doc.data().profilePic || null,
+      }));
+  
+      // Filter out the current user and ensure the user has a valid gym location
+      const validUsers = usersData.filter(
+        (user) =>
+          user.gymLocation &&
+          typeof user.gymLocation.lat === 'number' &&
+          typeof user.gymLocation.lng === 'number' &&
+          user.id !== FIREBASE_AUTH.currentUser.uid
+      );
+  
+      // Assuming gymLocation is already set and valid
+      if (gymLocation && typeof gymLocation.lat === 'number' && typeof gymLocation.lng === 'number') {
+        // Map to include distance in each user's data
+        const usersWithDistance = validUsers.map((user) => ({
+          ...user,
           distance: getDistance(
             { latitude: gymLocation.lat, longitude: gymLocation.lng },
-            { latitude: user.lat, longitude: user.lng }
-          ) / 1000,
-          id: user.id,
-          profilePic: user.profilePic,
+            { latitude: user.gymLocation.lat, longitude: user.gymLocation.lng }
+          ) / 1000, // Convert meters to kilometers
         }));
-    
-        setNearbyUsers(usersWithDistance);
+  
+        // Order users by distance from the current user's gym location
+        const sortedUsers = usersWithDistance.sort((a, b) => a.distance - b.distance);
+  
+        // Update state with the processed list of users
+        setNearbyUsers(sortedUsers);
       }
     };
-
-    if (gymLocation && friends) { // Make sure to run this effect when friends state is updated too
+  
+    // Call fetchUsersLocations if gymLocation and friends state are properly set
+    if (
+      gymLocation &&
+      typeof gymLocation.lat === 'number' &&
+      typeof gymLocation.lng === 'number' &&
+      Array.isArray(friends)
+    ) {
       fetchUsersLocations();
     }
-  }, [gymLocation, friends]); // Add friends to the dependency array
+  }, [gymLocation, friends]); // Dependencies: Re-fetch when gymLocation or friends state changes  
+  
 
   useEffect(() => {
     const fetchConnections = async () => {
@@ -135,6 +139,32 @@ const MeetupScreen = ({ navigation }) => {
     };
 
     fetchConnections();
+  }, []);
+
+  useEffect(() => {
+    const fetchChatRooms = async () => {
+      const userId = FIREBASE_AUTH.currentUser.uid;
+      const chatRoomsQuery = query(
+        collection(FIREBASE_DB, 'ChatRooms'),
+        where('participants', 'array-contains', userId)
+      );
+      const chatRoomsSnapshot = await getDocs(chatRoomsQuery);
+  
+      const friendIds = chatRoomsSnapshot.docs.flatMap(doc => doc.data().participants.filter(id => id !== userId));
+      const friendsDetails = await Promise.all(friendIds.map(async (friendId) => {
+        const friendRef = doc(FIREBASE_DB, 'Users', friendId);
+        const friendSnap = await getDoc(friendRef);
+        return friendSnap.exists() ? {
+          id: friendId,
+          name: friendSnap.data().name,
+          profilePic: friendSnap.data().profilePic || null,
+        } : null;
+      }));
+  
+      setFriends(friendsDetails.filter(Boolean));
+    };
+  
+    fetchChatRooms();
   }, []);
 
   const renderFriends = () => {
@@ -202,41 +232,46 @@ const MeetupScreen = ({ navigation }) => {
 
   const acceptConnectionRequest = async (requesterId) => {
     const userId = FIREBASE_AUTH.currentUser.uid;
-
+  
     try {
       // Begin a batched write to perform multiple operations atomically
       const batch = writeBatch(FIREBASE_DB);
-
-      // Update the connection request status to 'accepted'
+  
+      // Create a unique ID for the chat room based on the user IDs
+      const chatRoomId = [userId, requesterId].sort().join('_');
+  
+      // Create a reference for the new chat room
+      const chatRoomRef = doc(FIREBASE_DB, 'ChatRooms', chatRoomId);
+      // Add the chat room document with both users as participants
+      batch.set(chatRoomRef, {
+        participants: [userId, requesterId],
+        createdAt: new Date() // You can add more fields as needed
+      });
+  
+      // Update the connection request status to 'accepted' by deleting it
       const requestRef = doc(FIREBASE_DB, `Users/${userId}/connectionRequests`, requesterId);
-      batch.update(requestRef, { status: 'accepted' });
-
-      // remove the request from the connectionRequests subcollection
       batch.delete(requestRef);
-
+  
       // Add the requester to the current user's friends list
-      // Note: This assumes you have a field 'friends' which is an array of user IDs
       const userRef = doc(FIREBASE_DB, 'Users', userId);
       batch.update(userRef, {
         friends: arrayUnion(requesterId)
       });
-
+  
       // Commit the batched write
       await batch.commit();
-
-      // Remove the accepted request from the connectionRequestsReceived state
+  
+      // Update the local state
+      setFriends(prevFriends => [...prevFriends, requesterId]);
       setConnectionRequestsReceived(prevRequests =>
         prevRequests.filter(request => request.id !== requesterId)
       );
-
-      // Add the requester to the friends state
-      setFriends(prevFriends => [...prevFriends, requesterId]);
-
-      console.log('Connection request accepted successfully.');
+  
+      console.log('Connection request accepted and chat room created successfully.');
     } catch (error) {
-      console.error('Error accepting connection request: ', error);
+      console.error('Error accepting connection request and creating chat room: ', error);
     }
-  };
+  }; 
 
   const getConnectionStatus = (userId) => {
     // Check if the current user has sent a connection request to userId
@@ -257,8 +292,10 @@ const MeetupScreen = ({ navigation }) => {
     return 'Request Connect'; // No connection or pending request
   };
 
-
   const handleSelect = async (data, details = null) => {
+    console.log('Selected data:', data);
+    console.log('Selected details:', details);
+  
     if (details && details.geometry && details.geometry.location) {
       const location = {
         name: data.structured_formatting.main_text,
@@ -267,7 +304,7 @@ const MeetupScreen = ({ navigation }) => {
         lat: details.geometry.location.lat,
         lng: details.geometry.location.lng,
       };
-
+  
       try {
         await setDoc(doc(FIREBASE_DB, 'Users', FIREBASE_AUTH.currentUser.uid), { gymLocation: location }, { merge: true });
         setGymLocation(location); // Save the entire location object
@@ -287,7 +324,7 @@ const MeetupScreen = ({ navigation }) => {
           style={styles.profilePic}
         />
         <Text style={styles.userName}>{user.name}</Text>
-        <Text>{(user.distance / 1000).toFixed(2)} km away</Text>
+        <Text>{user.distance} km away</Text>
         <TouchableOpacity
           style={styles.connectButton}
           onPress={() => {
@@ -309,19 +346,25 @@ const MeetupScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {!gymLocation ? (
-        // If gymLocation is not set, show the GooglePlacesAutocomplete component
-        <GooglePlacesAutocomplete
-          placeholder="Search for Gym"
-          onPress={handleSelect}
-          query={{ key: GOOGLE_API_KEY, components: 'country:uk' }}
-          fetchDetails={true}
-          onFail={error => console.error(error)}
-          onNotFound={() => console.log('No results found')}
-          styles={{
-            textInputContainer: { width: '90%', alignSelf: 'center' },
-            textInput: styles.input,
-          }}
-        />
+      // If gymLocation is not set, show the GooglePlacesAutocomplete component
+      <GooglePlacesAutocomplete
+      placeholder="Search for Gym"
+      onPress={handleSelect} // Updated this line to call your handleSelect function
+      query={{
+        key: GOOGLE_API_KEY,
+        components: 'country:uk',
+      }}
+      fetchDetails={true}
+      onFail={error => console.error(error)}
+      onNotFound={() => console.log('No results found')}
+      styles={{
+        textInputContainer: {
+          width: '90%',
+          alignSelf: 'center'
+        },
+        textInput: styles.input,
+      }}
+      />
       ) : (
         // If gymLocation is set, show the divided screen
         <>
