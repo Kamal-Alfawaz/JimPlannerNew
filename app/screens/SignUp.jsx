@@ -25,19 +25,26 @@ const SignUp = () => {
             quality: 1,
         });
 
-        console.log(result);
-
         if (!result.canceled) {
             setProfilePic(result.uri);
         }
+    };
+
+    const formatDOB = (text) => {
+        let formattedText = text.replace(/\D/g, '').substring(0, 8);
+        formattedText = formattedText.replace(/(\d{2})(\d)/, '$1/$2');
+        formattedText = formattedText.replace(/(\d{2})(\d)/, '$1/$2');
+        return formattedText;
+    };
+
+    const handleDOBChange = (text) => {
+        setDob(formatDOB(text));
     };
 
     const SignUpUser = async () => {
         setLoading(true);
         try {
             const response = await createUserWithEmailAndPassword(auth, email, password);
-            console.log(response);
-    
             let profilePicUrl = null;
     
             // If a profile picture has been selected, upload it to Firebase Storage
@@ -78,7 +85,7 @@ const SignUp = () => {
                 <Text style={styles.imageEdit} >Click to edit Image</Text>
                 <TextInput value={name} style={styles.input} placeholder='Name' autoCapitalize='none' onChangeText={text => setName(text)} />
                 <TextInput value={email} style={styles.input} placeholder='Email' autoCapitalize='none' onChangeText={text => setEmail(text)} />
-                <TextInput value={dob} style={styles.input} placeholder='Date of Birth (Optional)' autoCapitalize='none' onChangeText={text => setDob(text)} />
+                <TextInput value={dob} style={styles.input} placeholder='Date of birth: DD/MM/YYYY' autoCapitalize='none' onChangeText={handleDOBChange} />
                 <TextInput secureTextEntry={true} value={password} style={styles.input} placeholder='Password' autoCapitalize='none' onChangeText={text => setPassword(text)} />
                 {loading ? <ActivityIndicator size="large" color="#0000ff" />
                   : <>
