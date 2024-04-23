@@ -25,6 +25,8 @@ const Login = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <KeyboardAvoidingView behaviour='padding'>
+                <Text style={styles.title}>Welcome to</Text>
+                <Text style={styles.nameTitle}>GymBuddy</Text>
                 <TextInput value={email} style={styles.input} placeholder='Email' autoCapitalize='none' onChangeText={(Text) => setEmail(Text)}></TextInput>
                 <TextInput secureTextEntry={true} value={password} style={styles.input} placeholder='Password' autoCapitalize='none' onChangeText={(Text) => setPassword(Text)}></TextInput>
                 {loading ? <ActivityIndicator size="large" color="#0000ff" />
@@ -52,5 +54,16 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         padding: 10,
         backgroundColor: '#fff'
+    },
+    title: {
+        fontSize: 34,
+        fontWeight: 'bold',
+        textAlign: 'center'
+    },
+    nameTitle:{
+        fontSize: 50,
+        fontWeight: 'bold',
+        marginBottom: 70,
+        textAlign: 'center',
     }
 });

@@ -29,7 +29,7 @@ function App() {
         {user ? (
           // Authenticated flow
           <>
-            <Stack.Screen name="My Todos" component={ActivityScreen} />
+            <Stack.Screen name="My Todos" component={ActivityScreen} options={{ headerShown: false }} />
             <Stack.Screen name="Details" component={Details} />
             <Stack.Screen name="Meetup" component={Meetup} />
             <Stack.Screen name="ChatScreen" component={ChatScreen}/>

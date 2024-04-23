@@ -18,6 +18,15 @@ const ActivityScreen = ({ navigation }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [allUserExercises, setAllUserExercises] = useState([]);
 
+  const markedDatesArray = allUserExercises.map(day => ({
+    date: day.date, // Make sure this is a Date or Moment object, or a string in a recognizable format
+    dots: [
+      {
+        color: 'blue', // Color for the dot
+      }
+    ]
+  }));  
+
   const db = FIREBASE_DB;
   const userId = FIREBASE_AUTH.currentUser.uid; // Example to get the current user's ID
 
@@ -159,12 +168,14 @@ const ActivityScreen = ({ navigation }) => {
   };
 
   const handleDatePress = (date) => {
-    console.log(`Date ${date} pressed`);
-    const selectedDayExercises = allUserExercises.find(dayExercise => dayExercise.date === date);
-    setSelectedDate(new Date(date)); // Assuming 'date' is in a format that can be directly used to create a Date object
-    setUserExercises(selectedDayExercises.exercises);
+    const dateString = typeof date === 'string' ? date : date.format("YYYY-MM-DD");
+    console.log(`Date ${dateString} pressed`);
+    const selectedDayExercises = allUserExercises.find(dayExercise => dayExercise.date === dateString);
+    setSelectedDate(new Date(dateString)); // Converts string to Date if not already a Date object
+    setUserExercises(selectedDayExercises ? selectedDayExercises.exercises : []);
     setModalVisible(true);
   };
+  
 
   const onDateChange = (event, newSelectedDate) => {
     setDatePickerVisible(false);
@@ -291,12 +302,14 @@ const ActivityScreen = ({ navigation }) => {
     <View style={{ flex: 1 }}>
       <CalendarStrip
         scrollable
-        style={{ height: 140, paddingTop: 20, paddingBottom: 10 }}
+        style={{ height: 140, paddingTop: 30, paddingBottom: 10 }}
         calendarColor={'#FFF'}
         calendarHeaderStyle={{ color: '#000' }}
         dateNumberStyle={{ color: '#000' }}
         dateNameStyle={{ color: '#000' }}
         iconContainer={{ flex: 0.1 }}
+        markedDates={markedDatesArray}
+        onDateSelected={(date) => handleDatePress(date.format("YYYY-MM-DD"))}
       />
       <ScrollView style={{ flex: 1 }}>
         {renderAllUserExercises()}
