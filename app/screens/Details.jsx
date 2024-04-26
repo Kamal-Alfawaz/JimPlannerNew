@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, ActivityIndicator, TouchableOpacity, Image, Dim
 import React, { useState, useEffect } from 'react'
 import { FIREBASE_DB, FIREBASE_AUTH, FIREBASE_STORAGE } from '../../FirebaseConfig';
 import * as ImagePicker from 'expo-image-picker';
-import { doc, getDoc, setDoc, collection, getDocs } from 'firebase/firestore'; // Import Firestore methods for document retrieval
+import { doc, getDoc, setDoc, collection, getDocs } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import defaultProfilePic from '../../assets/defaultProfilePic.png';
 import { LineChart } from 'react-native-chart-kit';
@@ -147,9 +147,9 @@ const Details = () => {
   
   const chartConfig = {
     backgroundColor: "#000000", // black background
-    color: (opacity = 1) => `rgba(0, 122, 255, ${opacity})`, // blue accent color for the line
-    labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`, // white text for labels
-    strokeWidth: 2, // line thickness
+    color: (opacity = 1) => `rgba(0, 122, 255, ${opacity})`,
+    labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
+    strokeWidth: 2,
     barPercentage: 0.5,
     useShadowColorFromDataset: false
   };
@@ -158,26 +158,44 @@ const Details = () => {
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-      {loading ? (
-        <ActivityIndicator size="large" color="#0000ff" />
-      ) : (
-        <>
-          <TouchableOpacity onPress={pickImage}>
-            <Image
-              source={userData && userData.profilePic ? { uri: userData.profilePic } : defaultProfilePic}
-              style={styles.profilePic}
-            />
-          </TouchableOpacity>
-          <Text>Name: {userData && userData.name ? userData.name : "N/A"}</Text>
-          <Text>Email: {userData && userData.email ? userData.email : "N/A"}</Text>
-          <Text>Date of Birth: {userData && userData.dob ? userData.dob : "N/A"}</Text>
-          <Text style={styles.title}>BIG 3 Strength progress</Text>
-          {Object.keys(deadliftAverages).length > 0 && renderChart(deadliftAverages, 'Barbell Deadlift')}
-          {Object.keys(squatAverages).length > 0 && renderChart(squatAverages, 'Barbell Squat')}
-          {Object.keys(benchPressAverages).length > 0 && renderChart(benchPressAverages, 'Barbell Bench Press - Medium Grip')}
-        </>
-      )}
-    </ScrollView>
+    {loading ? (
+      <ActivityIndicator size="large" color="#0000ff" />
+    ) : (
+      <>
+        <TouchableOpacity onPress={pickImage}>
+          <Image
+            source={userData && userData.profilePic ? { uri: userData.profilePic } : defaultProfilePic}
+            style={styles.profilePic}
+          />
+        </TouchableOpacity>
+        <Text>Name: {userData && userData.name ? userData.name : "N/A"}</Text>
+        <Text>Email: {userData && userData.email ? userData.email : "N/A"}</Text>
+        <Text>Date of Birth: {userData && userData.dob ? userData.dob : "N/A"}</Text>
+        <Text style={styles.title}>BIG 3 Strength progress</Text>
+        {Object.keys(deadliftAverages).length > 0 ? (
+          renderChart(deadliftAverages, 'Barbell Deadlift')
+        ) : (
+          <View style={styles.chartPlaceholder}>
+            <Text style={styles.placeholderText}>View your Barbell Deadlift progress here when you log it.</Text>
+          </View>
+        )}
+        {Object.keys(squatAverages).length > 0 ? (
+          renderChart(squatAverages, 'Barbell Squat')
+        ) : (
+          <View style={styles.chartPlaceholder}>
+            <Text style={styles.placeholderText}>View your Barbell Squat progress here when you log it.</Text>
+          </View>
+        )}
+        {Object.keys(benchPressAverages).length > 0 ? (
+          renderChart(benchPressAverages, 'Barbell Bench Press - Medium Grip')
+        ) : (
+          <View style={styles.chartPlaceholder}>
+            <Text style={styles.placeholderText}>View your Barbell Bench Press progress here when you log it.</Text>
+          </View>
+        )}
+      </>
+    )}
+  </ScrollView>
   );
 }
 
@@ -208,5 +226,21 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     paddingVertical:20,
+  },
+  chartPlaceholder: {
+    width: Dimensions.get('window').width - 16,
+    height: 220,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#F5F5F5',
+    borderRadius: 9,
+    marginVertical: 8,
+    borderWidth: 1,
+    borderColor: '#cccccc',
+  },
+  placeholderText: {
+    textAlign: 'center',
+    color: 'grey',
+    fontSize: 16,
   },
 });

@@ -19,10 +19,10 @@ const ActivityScreen = ({ navigation }) => {
   const [allUserExercises, setAllUserExercises] = useState([]);
 
   const markedDatesArray = allUserExercises.map(day => ({
-    date: day.date, // Make sure this is a Date or Moment object, or a string in a recognizable format
+    date: day.date,
     dots: [
       {
-        color: 'blue', // Color for the dot
+        color: 'blue',
       }
     ]
   }));  
@@ -258,7 +258,6 @@ const ActivityScreen = ({ navigation }) => {
     console.log(`Adding set to ${exerciseName}`);
     setUserExercises((prevExercises) =>
       prevExercises.map((exercise) => {
-        // Change here from exercise.name to exercise.exerciseName
         if (exercise.exerciseName === exerciseName) {
           console.log(`Found exercise, adding set: `, exercise);
           return { ...exercise, sets: [...exercise.sets, { reps: '', weight: '' }] };
@@ -270,7 +269,6 @@ const ActivityScreen = ({ navigation }) => {
   
   const handleSetChange = (exerciseName, setIndex, field, value) => {
     setUserExercises((prevExercises) => prevExercises.map((exercise) => {
-        // Change here from exercise.name to exercise.exerciseName
         if (exercise.exerciseName === exerciseName) {
             const updatedSets = exercise.sets.map((set, index) => {
                 if (index === setIndex) {

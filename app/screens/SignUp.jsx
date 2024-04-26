@@ -62,7 +62,7 @@ const SignUp = () => {
                 email: email,
                 name: name,
                 dob: dob || null,
-                profilePic: profilePicUrl, // Save the URL instead of the file path
+                profilePic: profilePicUrl,
                 gymLocation: null,
             });
         } catch (error) {

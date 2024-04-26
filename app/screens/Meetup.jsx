@@ -196,7 +196,6 @@ const MeetupScreen = ({ navigation }) => {
         <TouchableOpacity onPress={() => acceptConnectionRequest(request.id)}>
           <Text style={styles.connectButtonText}>Accept</Text>
         </TouchableOpacity>
-        {/* Possibly add a decline button or other actions */}
       </View>
     ));
   };
@@ -216,7 +215,7 @@ const MeetupScreen = ({ navigation }) => {
     try {
       await setDoc(toUserRequestRef, {
         from: fromUserId,
-        name: FIREBASE_AUTH.currentUser.displayName, // or another way to get the current user's name
+        name: FIREBASE_AUTH.currentUser.displayName, // Get the current user's name
         status: 'pending'
       });
       console.log('Connection request sent successfully.');
