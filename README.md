@@ -10,4 +10,5 @@ If you have an android device it is highly recommended to download the expo go a
 6) run `'npx expo start'`
 7) when QR code appears click `'SHIFT+a'`
 8) choose the android emulator (that shouldve been downloaded and would appear in the list here after you follow the steps in the link provided)
-9) wait for it to load and play around !
+   - keep in mind to choose the name of your android emulator as there was an error where it chooses automatically some note file
+10) wait for it to load and play around !
