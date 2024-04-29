@@ -84,20 +84,22 @@ const ActivityScreen = ({ navigation }) => {
     return grouped;
   };
 
+  // This function renders the exercises based on the search query
   const renderExercises = () => {
-    // Filter exercises based on the search query before rendering
+    // Use reduce to filter exercises based on the search query before rendering
     const filteredExercises = Object.keys(exercises).reduce((acc, letter) => {
+      // Filter exercises by search query
       const filteredBySearch = exercises[letter].filter(exercise =>
         exercise.Exercise_Name.toLowerCase().includes(searchQuery.toLowerCase())
       );
-  
+      // If there are any exercises that match the search query, add them to the accumulator
       if (filteredBySearch.length > 0) {
         acc[letter] = filteredBySearch;
       }
-  
+      // Return the accumulator
       return acc;
     }, {});
-  
+    // Sort the filtered exercises by letter and map over them to render each one
     return Object.keys(filteredExercises).sort().map((letter) => (
       <View key={letter}>
         <Text style={{ fontWeight: 'bold', fontSize: 18 }}>{letter}</Text>
@@ -154,8 +156,8 @@ const ActivityScreen = ({ navigation }) => {
             <View key={exerciseIndex} style={styles.exerciseItemContainer}>
               <Text style={styles.exerciseName}>{exercise.exerciseName}</Text>
               {exercise.sets?.map((set, setIndex) => (
-                <Text key={setIndex} style={styles.setDetail}>
-                  Set {setIndex + 1} x {set.reps} reps, {set.weight} kg
+                <Text key={setIndex} style={styles.setDetail} testID={`setDetail-${exerciseIndex}-${setIndex}`}>
+                  {`Set ${setIndex + 1} x ${set.reps} reps, ${set.weight} kg`}
                 </Text>
               ))}
             </View>
@@ -186,7 +188,7 @@ const ActivityScreen = ({ navigation }) => {
     }
   };
 
-  const handleDoneButton = () => {
+  const handleDoneButton = useCallback(() => {
     // Map selectedExercises to userExercises structure
     const updatedUserExercises = selectedExercises.map(exerciseName => {
       // Find if the exercise already exists in userExercises to preserve its sets if any
@@ -196,7 +198,7 @@ const ActivityScreen = ({ navigation }) => {
   
     setUserExercises(updatedUserExercises);
     setExerciseModalVisible(false); // Close the modal
-  };
+  });
   
 
   const fetchUserExercises = async (date) => {
@@ -214,15 +216,18 @@ const ActivityScreen = ({ navigation }) => {
         }
       } catch (error) {
         console.error("Error fetching user exercises: ", error);
-        setUserExercises([]); // Reset or handle error
+        setUserExercises([]); // Handle no exercises found for this date
       }
     }
   };
   
+  // Function to render user exercises in a modal
   const renderUserExercisesInModal = () => {
+    // Map through the userExercises array and return a View for each exercise
     return userExercises.map((exercise, exerciseIndex) => (
       <View key={exerciseIndex} style={styles.exerciseContainer}>
         <Text style={{ fontWeight: 'bold', fontSize: 20, textAlign: 'center' }}>{exercise.exerciseName}</Text>
+        {/* Map through the sets array and return a View for each set */}
         {exercise.sets.map((set, setIndex) => (
           <View key={setIndex} style={styles.setRow}>
             <Text style={{ fontWeight: 'bold', fontSize: 18, marginRight: 10 }}>{setIndex + 1}</Text>
@@ -248,36 +253,45 @@ const ActivityScreen = ({ navigation }) => {
             </View>
           </View>
         ))}
+        {/* Button to add a set to the exercise */}
         <Button title="Add Set" onPress={() => handleAddSet(exercise.exerciseName)} />
       </View>
     ));
   };
-  
 
+  // Function to handle adding a set to an exercise
   const handleAddSet = (exerciseName) => {
     console.log(`Adding set to ${exerciseName}`);
     setUserExercises((prevExercises) =>
+    // Map through the previous exercises and return a new array of exercises
       prevExercises.map((exercise) => {
+        // If the exercise name matches the provided exerciseName, add a new set to the exercise
         if (exercise.exerciseName === exerciseName) {
           console.log(`Found exercise, adding set: `, exercise);
           return { ...exercise, sets: [...exercise.sets, { reps: '', weight: '' }] };
         }
+        // If the exercise name does not match, return the exercise unchanged
         return exercise;
       })
     );
   };
-  
+
+  // Function to handle changes to the reps and weight input fields for a set
   const handleSetChange = (exerciseName, setIndex, field, value) => {
     setUserExercises((prevExercises) => prevExercises.map((exercise) => {
+        // If the exercise name matches the provided exerciseName, update the set at the specified index
         if (exercise.exerciseName === exerciseName) {
             const updatedSets = exercise.sets.map((set, index) => {
+                // If the set index matches the provided setIndex, update the specified field with the provided value
                 if (index === setIndex) {
                     return { ...set, [field]: value };
                 }
                 return set;
             });
+            // Return a new exercise object with the updated sets array
             return { ...exercise, sets: updatedSets };
         }
+        // If the exercise name does not match, return the exercise unchanged
         return exercise;
     }));
   };
@@ -343,7 +357,6 @@ const ActivityScreen = ({ navigation }) => {
           <View style={styles.modalView}>
             <ScrollView contentContainerStyle={styles.modalContentContainer}>
               <Text style={styles.modalText}>Exercises for {selectedDate.toDateString()}</Text>
-              {/* Place renderUserExercises function call here to display the exercises and their details */}
               {renderUserExercisesInModal()}
             </ScrollView>
             <View style={{ paddingHorizontal: 10, paddingBottom: 10 }}>

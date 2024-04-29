@@ -8,15 +8,18 @@ import defaultProfilePic from '../../assets/defaultProfilePic.png';
 import { LineChart } from 'react-native-chart-kit';
 
 const Details = () => {
+  // Initialize state variables
   const [loading, setLoading] = useState(true);
   const [userData, setUserData] = useState(null);
   const [deadliftAverages, setDeadliftAverages] = useState({});
   const [squatAverages, setSquatAverages] = useState({});
   const [benchPressAverages, setBenchPressAverages] = useState({});
 
+  // Destructure Firebase DB and Auth
   const db = FIREBASE_DB;
   const auth = FIREBASE_AUTH;
 
+  // Function to pick an image from the user's library
   const pickImage = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({
         mediaTypes: ImagePicker.MediaTypeOptions.Images,
@@ -48,22 +51,27 @@ const Details = () => {
     }
   };
 
+  // Function to calculate the average weight for a given exercise
   const calculateAverageExerciseWeight = async (exerciseName, setAverageState) => {
     const exercisesRef = collection(db, 'Users', auth.currentUser.uid, 'UserExercises');
     const exercisesSnap = await getDocs(exercisesRef);
 
     let weightsByDate = {};
-
+    
+    // Iterate through each document in the snapshot
     exercisesSnap.forEach((doc) => {
         const exercises = doc.data().exercises.filter(e => e.exerciseName === exerciseName);
 
+        // If there are any exercises with the specified name, calculate the average weight
         if (exercises.length) {
             let totalWeight = 0;
             let totalSets = 0;
 
+            // Iterate through each exercise and its sets
             exercises.forEach(exercise => {
                 exercise.sets.forEach(set => {
                     const weight = parseInt(set.weight, 10);
+                    // If the weight is a number, add it to the total weight and increment the total sets
                     if (!isNaN(weight)) {
                         totalWeight += weight;
                         totalSets++;
@@ -71,16 +79,18 @@ const Details = () => {
                 });
             });
 
+            // If there are any sets, calculate the average weight and store it in the weightsByDate object
             if (totalSets > 0) {
                 const averageWeight = totalWeight / totalSets;
                 weightsByDate[doc.id] = averageWeight.toFixed(1); // Keep only one decimal place
             }
         }
     });
-
+    // Set the state of the average weights for the specified exercise
     setAverageState(weightsByDate);
   };
 
+  // Fetch user data from Firestore when the component mounts
   useEffect(() => {
     // Function to fetch user data from Firestore
     const fetchUserData = async () => {
@@ -111,50 +121,64 @@ const Details = () => {
     calculateAverageExerciseWeight('Barbell Bench Press - Medium Grip', setBenchPressAverages);
   }, [auth, db]);
 
+  // Function to render a chart for a given exercise
   const renderChart = (data, title) => {
-    // Make sure we have data and it's in the correct format
     if (!data || Object.keys(data).length === 0) {
-      return null; // or some placeholder indicating no data is available
+      return null;
     }
   
     const labels = Object.keys(data);
-    const datasets = [{ data: Object.values(data).map(Number) }]; // Ensure all values are numbers
+    const datasets = [{
+      data: Object.values(data).map(Number),
+      color: (opacity = 1) => `rgba(0, 51, 102, ${opacity})`,
+      strokeWidth: 2,
+    }];
   
-    // Check if any dataset is not a number to avoid runtime errors
     if (!datasets[0].data.every(d => typeof d === 'number' && !isNaN(d))) {
       console.error('Invalid dataset', datasets[0].data);
-      return null; // or some error placeholder
+      return null;
     }
   
     return (
-      <View style={{ alignItems: 'center' }}>
+      <View style={{
+        alignItems: 'center',
+        backgroundColor: '#D0E4F7',
+        borderRadius: 9,
+        marginBottom: 20,
+      }}>
         <Text style={styles.chartTitle}>{title}</Text>
         <LineChart
           data={{ labels, datasets }}
-          width={screenWidth - 16}
+          width={Dimensions.get('window').width - 16}
           height={220}
-          chartConfig={chartConfig}
+          chartConfig={{
+            backgroundColor: '#D0E4F7',
+            backgroundGradientFrom: '#D0E4F7',
+            backgroundGradientTo: '#D0E4F7',
+            decimalPlaces: 1,
+            color: (opacity = 1) => `rgba(0, 51, 102, ${opacity})`,
+            labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+            style: {
+              borderRadius: 9
+            },
+            propsForDots: {
+              r: '6',
+              strokeWidth: '2',
+              stroke: '#002244'
+            },
+            propsForBackgroundLines: {
+              stroke: '#002244'
+            }
+          }}
           bezier
           style={{
             marginVertical: 8,
-            borderRadius: 9,
-            backgroundColor: '#F5F5F5'
+            borderRadius: 9
           }}
         />
       </View>
     );
   };
-  
-  const chartConfig = {
-    backgroundColor: "#000000", // black background
-    color: (opacity = 1) => `rgba(0, 122, 255, ${opacity})`,
-    labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-    strokeWidth: 2,
-    barPercentage: 0.5,
-    useShadowColorFromDataset: false
-  };
-  
-  const screenWidth = Dimensions.get('window').width;
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
@@ -162,7 +186,7 @@ const Details = () => {
       <ActivityIndicator size="large" color="#0000ff" />
     ) : (
       <>
-        <TouchableOpacity onPress={pickImage}>
+        <TouchableOpacity onPress={pickImage} testID="imagePickerButton">
           <Image
             source={userData && userData.profilePic ? { uri: userData.profilePic } : defaultProfilePic}
             style={styles.profilePic}

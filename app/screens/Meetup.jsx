@@ -102,8 +102,8 @@ const MeetupScreen = ({ navigation }) => {
             const friendSnap = await getDoc(friendRef);
             return friendSnap.exists() ? {
               id: friendId,
-              name: friendSnap.data().name, // Assuming the friend's name is stored in 'name'
-              profilePic: friendSnap.data().profilePic || null, // Include the profile picture URL
+              name: friendSnap.data().name,
+              profilePic: friendSnap.data().profilePic || null,
             } : null;
           }));
 
@@ -142,15 +142,22 @@ const MeetupScreen = ({ navigation }) => {
   }, []);
 
   useEffect(() => {
+    // This function retrieves a list of chat rooms that the current user is a participant in
     const fetchChatRooms = async () => {
+      // Get the current user's ID from the Firebase authentication object
       const userId = FIREBASE_AUTH.currentUser.uid;
+
+      // Define a query to retrieve all chat rooms where the current user is a participant
       const chatRoomsQuery = query(
         collection(FIREBASE_DB, 'ChatRooms'),
         where('participants', 'array-contains', userId)
       );
+      // Execute the query and retrieve the chat rooms that match the query
       const chatRoomsSnapshot = await getDocs(chatRoomsQuery);
-  
+      
       const friendIds = chatRoomsSnapshot.docs.flatMap(doc => doc.data().participants.filter(id => id !== userId));
+
+      // Map over the array of user IDs and retrieve the details of each user from the Firebase database
       const friendsDetails = await Promise.all(friendIds.map(async (friendId) => {
         const friendRef = doc(FIREBASE_DB, 'Users', friendId);
         const friendSnap = await getDoc(friendRef);
@@ -160,7 +167,8 @@ const MeetupScreen = ({ navigation }) => {
           profilePic: friendSnap.data().profilePic || null,
         } : null;
       }));
-  
+
+      // Set the state of the component to include the details of the current user's friends
       setFriends(friendsDetails.filter(Boolean));
     };
   
@@ -209,7 +217,6 @@ const MeetupScreen = ({ navigation }) => {
       return;
     }
 
-    // Correctly reference the subcollection for connection requests
     const toUserRequestRef = doc(FIREBASE_DB, `Users/${toUserId}/connectionRequests`, fromUserId);
 
     try {
@@ -220,7 +227,6 @@ const MeetupScreen = ({ navigation }) => {
       });
       console.log('Connection request sent successfully.');
 
-      // Update state if necessary
       setConnectionRequestsSent(prevRequests => [...prevRequests, toUserId]);
     } catch (error) {
       console.error('Error sending connection request: ', error);
@@ -244,7 +250,7 @@ const MeetupScreen = ({ navigation }) => {
       // Add the chat room document with both users as participants
       batch.set(chatRoomRef, {
         participants: [userId, requesterId],
-        createdAt: new Date() // You can add more fields as needed
+        createdAt: new Date()
       });
   
       // Update the connection request status to 'accepted' by deleting it
@@ -331,9 +337,7 @@ const MeetupScreen = ({ navigation }) => {
             if (status === 'Request Connect') {
               sendConnectionRequest(user.id);
             } else if (status === 'Respond to Request') {
-              // Here you could navigate to a screen to accept the request
             }
-            // Add logic for messaging if they're already friends
           }}
         >
           <Text style={styles.connectButtonText}>{getConnectionStatus(user.id)}</Text>
@@ -348,7 +352,7 @@ const MeetupScreen = ({ navigation }) => {
       // If gymLocation is not set, show the GooglePlacesAutocomplete component
       <GooglePlacesAutocomplete
       placeholder="Search for Gym"
-      onPress={handleSelect} // Updated this line to call your handleSelect function
+      onPress={handleSelect}
       query={{
         key: GOOGLE_API_KEY,
         components: 'country:uk',
@@ -491,7 +495,7 @@ const styles = StyleSheet.create({
   profilePic: {
     width: 60,
     height: 60,
-    borderRadius: 30, // Make it circular
+    borderRadius: 30,
     marginRight: 10,
   },
 });
