@@ -1,6 +1,6 @@
 How to run:
 
-If you have an android device it is highly recommended to download the expo go application right now, the steps still apply to all:
+If you have an android device it is highly recommended to download the expo go application on the play store instead, the steps still apply to all:
 
 1) run `'npm install'` in the terminal (make sure node is installed in your computer as it is needed to run npm)
 2) run in the terminal `'npx expo start'`
